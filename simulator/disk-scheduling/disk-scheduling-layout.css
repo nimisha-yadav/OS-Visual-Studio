@@ -1,0 +1,116 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 26px;
+}
+.buttonclass{
+  -moz-appearance: none;
+   -webkit-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
+   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+   background-color: #666;
+   border-radius: 6px;
+   border: 0;
+   color: #ffffff;
+   cursor: pointer;
+   display: inline-block;
+   font-weight: 400;
+   height: 2em;
+   width: auto;
+   line-height: 2em;
+   padding: 0 .6em;
+   text-align: center;
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+.buttonclass:hover {
+  background-color: #737373;
+}
+
+.buttonclass:active {
+  background-color: #595959;
+}
+
+#am_alg_name, #am_alg_seek, #cl-seek {
+  margin-left: 30px;
+  font-size: 15px;
+  text-align: center;
+  text-emphasis: bold;
+  color: #737373;
+}
+
+#graph_area {
+  visibility: hidden;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px 2px  #777;
+  width: 90%;
+  margin-left: 2%;
+}
+#cmpr_area {
+  visibility: hidden;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px 2px  #777;
+  width: 90%;
+  margin-left: 2%;
+}
+
+#plt_alg_name {
+  margin-left: 30px;
+  font-size: 30px;
+  text-align: center;
+  text-emphasis: bold;
+  color: #004080;
+}
+
+#cmpr-head {
+  margin-left: 30px;
+  font-size: 30px;
+  text-align: center;
+  text-emphasis: bold;
+  color: #004080;
+}
+
+
+#plt_alg_seek {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
+}
+
+#cal-seek {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
+}
+.right {
+  float: left;
+  text-align: center;
+  padding-top: 30px;
+}
+.container2 {
+  position:relative;
+  /* top: 1000px; */
+  margin-bottom: auto;
+  width: 90%;
+  left: 50px;
+
+}
+
+.container3 {
+  position: relative;
+  /* top: 1100px; */
+  margin-bottom: 40px;
+  width: 90%;
+  left: 50px;
+}
