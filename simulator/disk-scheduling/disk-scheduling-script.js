@@ -932,10 +932,10 @@ function getBitStreamAndPlot(event, r1, ini, final, alg, side){
                 document.getElementById("cal-seek").innerHTML = tot_seek + " = " + seek;
 
                 document.getElementById("graph_area").style.visibility = "visible";
+                cmprPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('direction').value);
         }
 
 }
-
 
 function cmprPlot(event, r1, ini, final, alg, side){
 
