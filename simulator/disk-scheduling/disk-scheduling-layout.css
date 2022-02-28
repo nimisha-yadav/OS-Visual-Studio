@@ -9,37 +9,8 @@
 h1 {
     font-size: 26px;
 }
-.buttonclass{
-  -moz-appearance: none;
-   -webkit-appearance: none;
-   -ms-appearance: none;
-   appearance: none;
-   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-   background-color: #666;
-   border-radius: 6px;
-   border: 0;
-   color: #ffffff;
-   cursor: pointer;
-   display: inline-block;
-   font-weight: 400;
-   height: 2em;
-   width: auto;
-   line-height: 2em;
-   padding: 0 .6em;
-   text-align: center;
-   text-decoration: none;
-   white-space: nowrap;
-}
-
-.buttonclass:hover {
-  background-color: #737373;
-}
-
-.buttonclass:active {
-  background-color: #595959;
+.button{
+  font: inherit;
 }
 
 #am_alg_name, #am_alg_seek, #cl-seek {
@@ -100,7 +71,7 @@ h1 {
 }
 .container2 {
   position:absolute;
-  top: 1950px;
+  top: 2100px;
   margin-bottom: auto;
   width: 65%;
   left: 280px;
@@ -109,7 +80,8 @@ h1 {
 
 .container3 {
   position: absolute;
-  top: 2550px;
+  top: 2650px;
+  /* margin-bottom: 40px; */
   width: 65%;
   left: 280px;
   padding-bottom: 100px;
