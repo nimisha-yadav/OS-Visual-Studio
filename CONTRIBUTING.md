@@ -1,7 +1,15 @@
+# Contribution Guidelines
 OS Visual Studio is an open source application, open to contributions via pull requests (PRs).
 
-If a PR is not based on an existing issue and involves major changes, it is recommended to first create the issue.
+## Contributing
+To contribue to OS Visual Studio, please follow these steps:
+1. Fork this repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin <project_name>/<location>`
+5. Create the pull request.
 
+Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 ## Issues
 A good issue must have:
 - A clear title.
@@ -10,8 +18,7 @@ A good issue must have:
 
 ## Pull Requests
 A good pull request must have:
-- A clear title.
-- A comprehensive description.
+- A clear title, comprehensive description containing the link to the issue.
 - Code-blocks in the description displaying the significant changes.
 - The base branch set to `main`.
 - Commits only relevant to that PR in particular.
