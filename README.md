@@ -59,9 +59,21 @@ Operating Systems being such an important subject for computer professionals, th
 </pre>
 
 ## Contributions
-Check out our [Contribution Guide](/CONTRIBUTING.md) to contribute to the OS Visual Studio. This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. New contributions of any kind are welcome. Feel free to improve the code base, request new features, or report bugs and errors.
+Check out our [Contribution Guide](/CONTRIBUTING.md) to contribute to the OS Visual Studio. New contributions of any kind are welcome. Feel free to improve the code base, request new features, or report bugs and errors.
 
-## Developers
+## Maintainers
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/manushivhare"><img src="https://avatars.githubusercontent.com/u/85252642?v=4" width="100px;" alt=""/><br /><sub><b>Manu Shivhare</b></sub></a><br /> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=manushivhare" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=manushivhare" title="Project Management">📆</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=manushivhare" title="Code">💻</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=manushivhare" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/nimisha-yadav"><img src="https://avatars.githubusercontent.com/u/73909578?v=4" width="100px;" alt=""/><br /><sub><b>Nimisha Yadav</b></sub></a><br /> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=nimisha-yadav" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=nimisha-yadav" title="Project Management">📆</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=nimisha-yadav" title="Code">💻</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=nimisha-yadav" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/sakshigoel19"><img src="https://avatars.githubusercontent.com/u/61665348?v=4" width="100px;" alt=""/><br /><sub><b>Sakshi Goel</b></sub></a><br /> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshigoel19" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshigoel19" title="Project Management">📆</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshigoel19" title="Code">💻</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshigoel19" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/sakshi15ss"><img src="https://avatars.githubusercontent.com/u/85166141?v=4" width="100px;" alt=""/><br /><sub><b>Sakshi Saxena</b></sub></a><br /> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshi15ss" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshi15ss" title="Project Management">📆</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshi15ss" title="Code">💻</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshi15ss" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
 For any queries/questions or help, please contact us at osvisstudio@gmail.com.
+
 ## License
 OS Visual Studio is licensed under [MIT License](/LICENSE.md).
