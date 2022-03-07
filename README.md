@@ -58,18 +58,22 @@ Operating Systems being such an important subject for computer professionals, th
 
 </pre>
 
+<div align="right"> 
+  
+Template Attribution: [HTML5 UP](https://html5up.net/)
+</div>
+
 ## Contributions
 Check out our [Contribution Guide](/CONTRIBUTING.md) to contribute to the OS Visual Studio. New contributions of any kind are welcome. Feel free to improve the code base, request new features, or report bugs and errors.
 
 ## Maintainers
-Thanks goes to these wonderful people
-([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/manushivhare"><img src="https://avatars.githubusercontent.com/u/85252642?v=4" width="100px;" alt=""/><br /><sub><b>Manu Shivhare</b></sub></a><br /> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=manushivhare" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=manushivhare" title="Project Management">📆</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=manushivhare" title="Code">💻</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=manushivhare" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/nimisha-yadav"><img src="https://avatars.githubusercontent.com/u/73909578?v=4" width="100px;" alt=""/><br /><sub><b>Nimisha Yadav</b></sub></a><br /> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=nimisha-yadav" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=nimisha-yadav" title="Project Management">📆</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=nimisha-yadav" title="Code">💻</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=nimisha-yadav" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/sakshigoel19"><img src="https://avatars.githubusercontent.com/u/61665348?v=4" width="100px;" alt=""/><br /><sub><b>Sakshi Goel</b></sub></a><br /> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshigoel19" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshigoel19" title="Project Management">📆</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshigoel19" title="Code">💻</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshigoel19" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/sakshi15ss"><img src="https://avatars.githubusercontent.com/u/85166141?v=4" width="100px;" alt=""/><br /><sub><b>Sakshi Saxena</b></sub></a><br /> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshi15ss" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshi15ss" title="Project Management">📆</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshi15ss" title="Code">💻</a> <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/commits?author=sakshi15ss" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/manushivhare"><img src="https://avatars.githubusercontent.com/u/85252642?v=4" width="100px;" alt=""/><br /><sub><b>Manu Shivhare</b></sub></a><br /> <a href=""><img src="https://img.icons8.com/fluency/24/000000/linkedin.png"/></a> <a href=""><img src="https://img.icons8.com/color/24/000000/twitter--v1.png"/></a></td>
+    <td align="center"><a href="https://github.com/nimisha-yadav"><img src="https://avatars.githubusercontent.com/u/73909578?v=4" width="100px;" alt=""/><br /><sub><b>Nimisha Yadav</b></sub></a><br /> <a href="https://www.linkedin.com/in/nimisha-yadav"><img src="https://img.icons8.com/fluency/24/000000/linkedin.png"/></a> <a href="https://twitter.com/nimisha_y"><img src="https://img.icons8.com/color/24/000000/twitter--v1.png"/></a> </td>
+    <td align="center"><a href="https://github.com/sakshigoel19"><img src="https://avatars.githubusercontent.com/u/61665348?v=4" width="100px;" alt=""/><br /><sub><b>Sakshi Goel</b></sub></a><br /> <a href=""><img src="https://img.icons8.com/fluency/24/000000/linkedin.png"/></a> <a href=""><img src="https://img.icons8.com/color/24/000000/twitter--v1.png"/></a></td>
+    <td align="center"><a href="https://github.com/sakshi15ss"><img src="https://avatars.githubusercontent.com/u/85166141?v=4" width="100px;" alt=""/><br /><sub><b>Sakshi Saxena</b></sub></a><br /> <a href=""><img src="https://img.icons8.com/fluency/24/000000/linkedin.png"/></a> <a href=""><img src="https://img.icons8.com/color/24/000000/twitter--v1.png"/></a></td>
   </tr>
 </table>
 
