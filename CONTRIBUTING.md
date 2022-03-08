@@ -1,7 +1,6 @@
 # Contribution Guidelines
 OS Visual Studio is an open source application, open to contributions via pull requests (PRs).
 
-## Contributing
 To contribue to OS Visual Studio, please follow these steps:
 1. Fork this repository.
 2. Create a branch: `git checkout -b <branch_name>`.
