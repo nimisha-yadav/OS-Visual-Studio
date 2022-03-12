@@ -1,0 +1,59 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+
+.fp {
+    padding: 7px;
+    border: 1px solid black;
+}
+
+.redToast {
+    background: brown;
+}
+
+.greenToast {
+    background: green;
+}
+
+td {
+    text-align: center;
+}
+h1 {
+    font-size: 26px;
+}
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    color: solid grey;
+    margin: 0;
+    padding: 0;
+    
+}
+
+td {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.container-deadlock .row-deadlock .z-depth-1-half {
+    text-align: center;
+}
+
+#restart {
+    padding: 30px;
+    margin-top: 17px;
+    background: whitesmoke;
+    border: 1px solid transparent;
+}
+
+.line {
+    padding: 10px;
+    background-color: #e89980;
+    border-radius: 36px;
+    margin: 40px;
+}
+
+#div0, #div2, #div3, #div4, #div5, #cont {
+    margin: 5px;
+    text-align: center;
+
+}
