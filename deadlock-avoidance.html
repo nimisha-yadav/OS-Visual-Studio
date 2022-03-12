@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Deadlock Avoidance</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="OS.png" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="simulator/deadlock-avoidance/materialize/materialize.css">
+    	<link rel="stylesheet" href="simulator/deadlock-avoidance/deadlock-avoidance-layout.css">
+
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="index.html#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
+								<ul>
+									<li>
+										<a href="simulator/cpu-scheduling.html">CPU Scheduling</a>
+									</li>
+									<li>
+										<a href="disk-scheduling.html">Disk Scheduling</a>
+									</li>
+									<li>
+										<a href="page-replacement.html">Page Replacement</a>
+									</li>
+									<li>
+										<a href="deadlock-avoidance.html">Deadlock Avoidance</a>
+									</li>
+									<li>
+										<a href="memory-allocation.html">Memory Allocation</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="tutorial.html">Tutorial</a></li>
+							<li><a href="forum-backend/forum.php">Discussion Forum</a></li>
+							<li><a href="index.html">About Team</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Deadlock Avoidance</h2>
+						<p>Let's understand and visualise Deadlock Avoidance Algorithms.</p>
+					</header>
+					<div class="box">
+						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+						<h3>What is Deadlock Avoidance?</h3>
+						<p>The deadlock avoidance method is used by the operating system in order to check whether the system is in a safe state or in an unsafe state and in order to avoid the deadlocks, the process must need to tell the operating system about the maximum number of resources a process can request in order to complete its execution. Banker's algorithm is used to avoid deadlock and allocate resources safely to each process in the computer system. It also helps the operating system to successfully share the resources between all the processes. In this section, let's simulate the working of Banker's Algorithm.</p>
+						<div class="row">
+							<div class="row-6 row-12-mobilep">
+								<h3>Terminologies in Banker's Algorithm</h3>
+								<p>Suppose n is the number of processes, and m is the number of each type of resource used in a computer system.<li>Available: It is an array of length 'm' that defines each type of resource available in the system. When Available[j] = K, means that 'K' instances of Resources type R[j] are available in the system. </li> <li>Max: It is a [n x m] matrix that indicates each process P[i] can store the maximum number of resources R[j] (each type) in a system. </li> <li>Allocation: It is a matrix of m x n orders that indicates the type of resources currently allocated to each process in the system. When Allocation [i, j] = K, it means that process P[i] is currently allocated K instances of Resources type R[j] in the system. </li> <li>Need: It is an M x N matrix sequence representing the number of remaining resources for each process. When the Need[i] [j] = k, then process P[i] may require K more instances of resources type Rj to complete the assigned work. </li><li>Finish: It is the vector of the order m. It includes a Boolean value (true/false) indicating whether the process has been allocated to the requested resources, and all resources have been released after finishing its task. </li> <li>Execution Time: It is a time required by the process to complete execution. It is also called running time. </p>
+							</div>
+							<div class="row-6 row-12-mobilep">
+								<p><b>The Banker's Algorithm is the combination of the safety algorithm and the resource request algorithm to control the processes and avoid deadlock in a system. Let's simulate its working. </b></p>
+								<br>
+								<div class="container-deadlock">
+								    <div class="row-deadlock" id="row1">
+								        <div class="l4 offset-l4 s12 m12">
+								            <div id="div0">
+								            </div>
+								            <div id="cont">
+
+								            </div>
+								            <div id="div2">
+
+								            </div>
+								            <div id="div3">
+
+								            </div>
+								            <div id="div4">
+
+								            </div>
+								            <div id="div5">
+
+								            </div>
+								            <div id="restart" class="z-depth-1-half">
+								                <div class="row-deadlock">
+								                    <div class="col s6 m6 l6" style="border-right:2px solid #e89980">
+								                        <center>
+								                                <h1 style="font-family:'Source Sans Pro';font-size:40px;"><span id="exec_time"></span>ms</h1>
+								                                <h5 style="font-family:'Source Sans Pro';color:solid grey;font-size:20px;">Execution Time</h5><br>
+								                        </center>
+								                    </div>
+								                    <div class="col s6 m6 l6">
+								                        <button onclick="restart()" style="margin-top: 10%; width: 80%; height: 80px;" class="button icon solid fa-undo"> Restart </button>
+
+								                    </div>
+								                </div>
+								            </div>
+								        </div>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-google"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; <a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS Visual Studio. </a>   All Rights Reserved.</li>
+					</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="simulator/deadlock-avoidance/materialize/node_modules/jquery/dist/jquery.js"></script>
+			<script src="simulator/deadlock-avoidance/materialize/materialize.js"></script>
+			<script src="simulator/deadlock-avoidance/deadlock-avoidance-script.js"></script>
+
+	</body>
+</html>
