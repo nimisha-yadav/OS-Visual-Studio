@@ -8,7 +8,21 @@
 
 h1 {
     font-size: 26px;
+    font-weight: 400;
 }
+
+h2, h3 {
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0;
+}
+
+
 
 table,
 th,
