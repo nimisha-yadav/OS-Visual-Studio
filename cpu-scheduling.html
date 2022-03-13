@@ -23,52 +23,24 @@
 								<a href="index.html#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
 								<ul>
 									<li>
-										<a href="simulator/cpu-scheduling.html">CPU Scheduling</a>
+										<a href="cpu-scheduling.html">CPU Scheduling</a>
 									</li>
 									<li>
 										<a href="disk-scheduling.html">Disk Scheduling</a>
-										<ul>
-											<li><a href="#">FCFS Algorithm</a></li>
-											<li><a href="#">SSTF Algorithm</a></li>
-											<li><a href="#">SCAN Algorithm</a></li>
-											<li><a href="#">CSCAN Algorithm</a></li>
-											<li><a href="#">LOOK Algorithm</a></li>
-											<li><a href="#">CLOOK Algorithm</a></li>
-											<li><a href="#">LIFO Algorithm</a></li>
-										</ul>
 									</li>
 									<li>
 										<a href="page-replacement.html">Page Replacement</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
 									</li>
 									<li>
 										<a href="deadlock-avoidance.html">Deadlock Avoidance</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
 									</li>
 									<li>
 										<a href="memory-allocation.html">Memory Allocation</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
 									</li>
 								</ul>
 							</li>
-							<li><a href="#main">Introduction</a></li>
-							<li><a href="index.html">Tutorial</a></li>
-							<li><a href="index.html">Discussion Forum</a></li>
+							<li><a href="tutorial.html">Tutorial</a></li>
+							<li><a href="forum-backend/forum.php">Discussion Forum</a></li>
 							<li><a href="index.html">About Team</a></li>
 							<li><a href="contact.html">Contact</a></li>
 							<li><a href="#" class="button">Sign Up</a></li>
@@ -88,21 +60,15 @@
 						<p>CPU Scheduling is a process of determining which process will own CPU for execution while another process is on hold. The main task of CPU scheduling is to make sure that whenever the CPU remains idle, the OS at least select one of the processes available in the ready queue for execution. The selection process will be carried out by the CPU scheduler. It selects one of the processes in memory that are ready for execution.</p>
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
-								<h3>Important CPU scheduling Terminologies</h3>
+								<h3>Important Terminologies</h3>
 								<p><li>Burst Time/Execution Time: It is a time required by the process to complete execution. It is also called running time. </li> <li>Arrival Time: when a process enters in a ready state </li><li>Finish Time: when process complete and exit from a system </li> <li>Multiprogramming: A number of programs which can be present in memory at the same time. </li> <li>Jobs: It is a type of program without any kind of user interaction. </li><li>User: It is a kind of program having user interaction. </li><li>Process: It is the reference that is used for both job and user. </li> <li>CPU/IO burst cycle: Characterizes process execution, which alternates between CPU and I/O activity. </li> <li>CPU times are usually shorter than the time of I/O.</li></p>
 							</div>
 							<div class="row-6 row-12-mobilep">
 								<h3>Demo of CPU Scheduling Algorithms</h3>
-								<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>
-
+								<p>In this section, we shall visualise the working of CPU Scheduling Algorithms through Gantt Chart, Process Table, and Comparison Graphs. Note: Process ID is the tiebreaker.</p>
 
 								<!-- Algorithm-->
-								<h1>Instructions :</h1>
-							    <ol class="instructions">
-							        <li>Tiebreaker is Process ID.</li>
-							        <li>When burst time is criteria, total burst time is taken into consideration.</li>
-							        <li>Context Switch not considered at start and end of processes.</li>
-							    </ol>
+
 							    	<div class="algoblock">
 							        <form id="algorithms-form">
 							            <label for="algo"><h1>Algorithms : </h1></label>
@@ -148,6 +114,7 @@
 
 							        <button type="button" class="add-btn buttonclass button alt small" style="float: left;">+ Add Process</button>
 							        <button type="button" class="remove-btn buttonclass button alt small" style="float: right;">- Delete Process</button>
+							        <br>
 							        <br>
 							    	</div>
 							        <div id="time-quantum" class="hide">
