@@ -564,7 +564,7 @@ function submit(){
 	// 	alert("Enter the values again");
 	// 	reset();
 	// }
-	document.getElementById("body1").style.height = "130%";
+	//document.getElementById("body1").style.height = "130%";
 	var select = document.getElementById('select');
 	//var option = ['First in first Out (FIFO)','Least Recently Used (LRU)']
 
