@@ -1,5 +1,5 @@
 # 💻 OS Visual Studio 
-OS Visual Studio is a JavaScript-based web simulator that helps in visualising all major Operating Systems algorithms in undergrad OS course.
+OS Visual Studio is a JavaScript-based web simulator that helps in visualising all major Operating System algorithms in undergrad OS course.
 <div align="center">
 <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 <a href="https://github.com/nimisha-yadav/OS-Visual-Studio/"><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
@@ -9,15 +9,16 @@ OS Visual Studio is a JavaScript-based web simulator that helps in visualising a
 </div>
 
 ## About
-Operating Systems being such an important subject for computer professionals, there arises a need wherein an application can help visualise all the popular algorithms of Operating systems. Our purpose by developing this application is:
+Operating Systems being such an important subject for computer professionals and students, there arises a need wherein an application can help visualise all the major algorithms in Operating Systems. Through this application, our purpose is:
 1. To provide a user friendly interface to simulate and visualise all the major algorithms of operating systems with utmost efficiency.
-2. To encourage students to have an in-depth understanding of the algorithms via charts, graphs, and calculation tables.
-3. To provide a common discussion platform to the community of students, teachers, and tech professionals to discuss, post, and answer queries related to the OS algorithms
+2. To encourage students to have an in-depth understanding of the algorithms via gantt charts, comparison graphs, and calculation tables.
+3. To provide a common discussion platform to the community of students, teachers, and tech professionals to discuss, post, and answer queries related to the OS algorithms.
 
 ## Functionality & Concepts
-- The different variants and all parameters of the algorithms have been considered.
 - The fully-responsive website, created via materialize-css and bootstrap, has a very simple and interactive interface that uses material UI features in different activities involving the simulations and calculations.
 - The backend has been created using PHP and MySQL, that aids in downloading individual progress results and allows users to participate in the discussion forum.
+- The different variants and all parameters of the algorithms have been considered.
+
 #### Simulation of the following algorithms can be done via OS Visual Studio:
 - CPU Scheduling
 
@@ -57,11 +58,6 @@ Operating Systems being such an important subject for computer professionals, th
 <img src="screenshots/1.png" width="1000"> <img src="screenshots/2.png" width="1000"> <img src="screenshots/3.png" width="1000">
 
 </pre>
-
-<div align="right"> 
-  
-Template Attribution: [HTML5 UP](https://html5up.net/)
-</div>
 
 ## Contributions
 Check out our [Contribution Guide](/CONTRIBUTING.md) to contribute to the OS Visual Studio. New contributions of any kind are welcome. Feel free to improve the code base, request new features, or report bugs and errors.
