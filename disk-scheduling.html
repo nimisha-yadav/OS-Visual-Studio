@@ -13,67 +13,39 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
-          <h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
-          <nav id="nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li>
-                <a href="index.html#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
-                <ul>
-                  <li>
-                    <a href="simulator/cpu-scheduling.html">CPU Scheduling</a>
-                  </li>
-                  <li>
-                    <a href="disk-scheduling.html">Disk Scheduling</a>
-                    <ul>
-                      <li><a href="#">FCFS Algorithm</a></li>
-                      <li><a href="#">SSTF Algorithm</a></li>
-                      <li><a href="#">SCAN Algorithm</a></li>
-                      <li><a href="#">CSCAN Algorithm</a></li>
-                      <li><a href="#">LOOK Algorithm</a></li>
-                      <li><a href="#">CLOOK Algorithm</a></li>
-                      <li><a href="#">LIFO Algorithm</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="page-replacement.html">Page Replacement</a>
-                    <ul>
-                      <li><a href="#">Option One</a></li>
-                      <li><a href="#">Option Two</a></li>
-                      <li><a href="#">Option Three</a></li>
-                      <li><a href="#">Option Four</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="deadlock-avoidance.html">Deadlock Avoidance</a>
-                    <ul>
-                      <li><a href="#">Option One</a></li>
-                      <li><a href="#">Option Two</a></li>
-                      <li><a href="#">Option Three</a></li>
-                      <li><a href="#">Option Four</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="memory-allocation.html">Memory Allocation</a>
-                    <ul>
-                      <li><a href="#">Option One</a></li>
-                      <li><a href="#">Option Two</a></li>
-                      <li><a href="#">Option Three</a></li>
-                      <li><a href="#">Option Four</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#main">Introduction</a></li>
-              <li><a href="index.html">Tutorial</a></li>
-              <li><a href="index.html">Discussion Forum</a></li>
-              <li><a href="index.html">About Team</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="#" class="button">Sign Up</a></li>
-            </ul>
-          </nav>
-        </header>
+			<header id="header">
+				<h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="index.html#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
+							<ul>
+								<li>
+									<a href="cpu-scheduling.html">CPU Scheduling</a>
+								</li>
+								<li>
+									<a href="disk-scheduling.html">Disk Scheduling</a>
+								</li>
+								<li>
+									<a href="page-replacement.html">Page Replacement</a>
+								</li>
+								<li>
+									<a href="deadlock-avoidance.html">Deadlock Avoidance</a>
+								</li>
+								<li>
+									<a href="memory-allocation.html">Memory Allocation</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="tutorial.html">Tutorial</a></li>
+						<li><a href="forum-backend/forum.php">Discussion Forum</a></li>
+						<li><a href="index.html">About Team</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#" class="button">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
 
         <!-- Main -->
           <section id="main" class="container">
@@ -90,17 +62,18 @@
       requests for accessing the disk. Disk Scheduling is also called Input/Output Scheduling.</p>
               <div class="row">
                 <div class="row-6 row-12-mobilep">
+		<h3>Important Terminologies</h3>
                   <p>
                      <li>Seek Time: Seek time is the time taken in locating the disk arm to a specified track where the read/write request will be satisfied.</li>
                      <li>Rotational Latency: It is the time taken by the desired sector to rotate itself to the position from where it can access the R/W heads.</li>
                      <li>Transfer Time: It is the time taken to transfer the data. </li>
-                     <li>Disk Access Time: Disk access time is given as, <br>Disk Access Time = Rotational Latency + Seek Time + Transfer Time </li>
+                     <li>Disk Access Time: Disk access time is given as, <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp &nbsp; Disk Access Time = Rotational Latency + Seek Time + Transfer Time </li>
                      <li>Disk Response Time: It is the average of time spent by each request waiting for the IO operation. </li>
                      </p>
                 </div>
                 <div class="row-6 row-12-mobilep">
                   <h3>Demo of Disk Scheduling Algorithms</h3>
-                  <p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>
+                  <p>In this section, we shall visualise the working of Disk Scheduling Algorithms through analysing the algorithm chart and the comparison chart.</p>
                   <script>
                     function admSelectCheck(nameSelect)
                     {
@@ -172,23 +145,19 @@
                             </div>
                         </fieldset>
                       </form>
-											<ul class="actions special">
-												<!-- <li><button type="submit" id="plot-button" class="buttonclass" onclick="getBitStreamAndPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('algorithm').value,document.getElementById('direction').value)"><a href="#grph" style="color: white; text-decoration: none;">&nbsp;Plot&nbsp;</a></button></li>
-												<li><button type="submit" id="animate-button" class="buttonclass">Animate</button></li>
-												<li><button type="submit" id="cmpr-button" class="buttonclass" onclick="cmprPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('direction').value)"><a href="#cmpr" style="color: white; text-decoration: none;">&nbsp;Compare&nbsp;</a></button></li> -->
-												<li><button type="submit" id="plot-button" class="button icon solid fa-calculator" onclick="getBitStreamAndPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('algorithm').value,document.getElementById('direction').value)">&nbsp;Calculate&nbsp;</button></li>
-<!-- 												<li><button type="submit" id="cmpr-button" class="button icon solid fa-chart-bar" onclick="cmprPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('direction').value)">&nbsp;Compare&nbsp;</a></button></li> -->
+		     <ul class="actions special">
+			<li><button type="submit" id="plot-button" class="button icon solid fa-calculator" onclick="getBitStreamAndPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('algorithm').value,document.getElementById('direction').value)">&nbsp;Calculate&nbsp;</button></li>
                         <li><button type="submit" id="animate-button" class="button icon solid fa-download"> Download Results</button></li>
                         <li><button type="button" id="reset" class="button icon solid fa-undo" onClick="window.location.reload();">Reset</button></li>
-											</ul>
+		    </ul>
 
                     </div>
 
-                    <div class="right">
+                    <div class="right"style="display:none;" >
                       <div id="am_alg_name"></div>
                       <div id="cl-seek"></div>
                       <div id="am_alg_seek"></div>
-                      <canvas id="canvas" width=700 height=700></canvas>
+                      <canvas id="canvas" width=700 height=550 ></canvas>
                     </div>
 
                     <div id="grph" class="container2">
@@ -204,8 +173,8 @@
                       <div id="cmpr_area"></div>
 
                     </div>
-                    <script src="js/jquery-2.1.4.min.js"></script>
-                    <script src="js/bootstrap.min.js"></script>
+                    <script src="simulator/disk-scheduling/jquery-2.1.4.min.js"></script>
+                    <script src="simulator/disk-scheduling/bootstrap.min.js"></script>
                     <script src="simulator/disk-scheduling/disk-scheduling-script.js"></script>
                     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
                 </div>
@@ -216,8 +185,8 @@
       <!-- Footer -->
         <footer id="footer">
           <ul class="icons">
-            <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon brands fa-google"><span class="label">Email</span></a></li>
+		<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+		<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
           </ul>
           <ul class="copyright">
             <li>&copy; <a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS Visual Studio. </a>   All Rights Reserved.</li>
