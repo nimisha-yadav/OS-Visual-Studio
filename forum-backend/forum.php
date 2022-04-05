@@ -8,15 +8,35 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+		<style>
+  				.modal-header, h4, .close {
+    				background-color: #c18978;
+    				color:white !important;
+    				text-align: center;
+    				font-size: 30px;
+  				}
+  				.modal-footer {
+    				background-color: #f9f9f9;
+  				}
+  		</style>
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/design.css" />
 	</head>
 
 	<body class="landing is-preload">
-		<?php include '../partials/_dbconnect.php';?>
+	<?php include '../partials/_header.php';?>
+		<?php include '../partials/_signupModal.php';?>
+		<?php include '../partials/_loginModal.php';?>
+		<?php include '../partials/_dbconnect.php';
+		
+		if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true"){
+			echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+		}
+		?>
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" class="alt">
+				<!-- <?php echo '<header id="header" class="alt">
 					<h1><a href="../index.html">OS</a> Visual Studio</h1>
 					<nav id="nav">
 						<ul>
@@ -86,12 +106,19 @@
 							<li><a href="#main">About</a></li>
 							<li><a href="../index.html">Tutorial</a></li>
 							<li><a href="forum.php">Discussion Forum</a></li>
-							<li><a href="../contact.html">Contact</a></li>
-							<li><button class="button" data-toggle="modal" data-target="#exampleModal">Login</button></li>
-							<li><button class="button" data-toggle="modal" data-target="#myModal">Signup</button></li>
-						</ul>
+							<li><a href="../contact.html">Contact</a></li>';
+							if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
+                                echo 'Welcome';
+                              }
+                            else{
+                                echo '<li><button class="button" data-toggle="modal" data-target="#loginModal">Login</button></li>
+                                <li><button class="button" data-toggle="modal" data-target="#myModal">Signup</button></li>';
+                            }
+                            
+							
+						echo '</ul>
 					</nav>
-				</header>
+				</header>';?> -->
 			
 			<!-- Banner -->
 				<section id="banner" style="background-image: url('../images/pic04.jpg'); background-size:cover;">
@@ -115,51 +142,46 @@
 						</form>
 					</ul>
 				</section>
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog"> -->
-    
+  
+<!-- Modal -->
+<!-- <div class="modal fade" id="myModal" role="dialog" style="z-index:10000;">
+    <div class="modal-dialog">
+     -->
       <!-- Modal content-->
       <!-- <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
         </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form" action="/forum/partials/_handleSignup.php" method="post">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> User Email</label>
+              <input type="text" class="form-control" id="signupEmail" name="signupEmail" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="signupPassword" name="signupPassword" placeholder="Enter password">
+            </div>
+			<div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Confirm Password</label>
+              <input type="text" class="form-control" id="signupcPassword" name="signupcPassword" placeholder="Enter password">
+            </div> -->
+            <!-- <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div> -->
+              <!-- <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Sign Up</button>
+          </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button> -->
+          <!-- <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p> -->
+        <!-- </div>
+      </div> -->
       
     </div>
-  </div> -->
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+  </div> 
 			<!-- Main -->
 				<section id="main" class="container">
 
@@ -224,8 +246,20 @@
 					</ul>
 				</footer>
 
+				<?php 
+		
+		if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true"){
+			echo "Welcome to Geeks for Geeks";
+		}
+		?>
 		</div>
-
+		<script>
+			$(document).ready(function(){
+  				$("#myBtn").click(function(){
+    			$("#myModal").modal();
+  			});
+			});
+		</script>
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.dropotron.min.js"></script>
