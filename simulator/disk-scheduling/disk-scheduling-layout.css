@@ -8,7 +8,15 @@
 
 h1 {
     font-size: 26px;
+    font-weight: 400;
 }
+h2{
+  font-weight: 400;
+}
+h3{
+  font-weight:400;
+}
+
 .button{
   font: inherit;
 }
@@ -59,30 +67,37 @@ h1 {
   margin: 10px;
 }
 
-#cal-seek {
+/* #cal-seek {
   text-align: center;
   font-size: 15px;
   margin: 10px;
-}
-.right {
+} */
+/* }
+.calculate{
+  padding-bottom: 400px;
+} */
+
+.right{
   float: left;
+  display:flex;
   text-align: center;
   padding-top: 30px;
 }
+#cal-seek {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+}
 .container2 {
-  position:absolute;
-  top: 2100px;
-  margin-bottom: auto;
-  width: 65%;
-  left: 280px;
-
+  position:relative;
+  width: 100%;
+  text-align: center;
 }
 
 .container3 {
-  position: absolute;
-  top: 2650px;
-  /* margin-bottom: 40px; */
-  width: 65%;
-  left: 280px;
-  padding-bottom: 100px;
+  position: relative;
+  text-align: center;
+  /* left: 10px; */
+  width: 100%;
 }
