@@ -145,6 +145,7 @@
 
 						if($showAlert)
 						{
+							echo '<script>window.alert("Your thread has been added! Please wait for community to respond.")</script>';
 							echo ' 	<div class="alert alert-success alert-dismissible fade show shadow">
                         	   		<strong>Success!</strong> Your thread has been added! Please wait for community to respond
                         	   		<button type="button" class="btn-close" data-bs-dismiss="alert">
@@ -159,7 +160,7 @@
 
 					if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
 
-						echo $_SESSION['user_id'];
+					// echo $_SESSION['user_id'];
 					echo '<div class="container">
 					<form action="'. $_SERVER["REQUEST_URI"] . '" method="post" autocomplete="off">
 						<h2 class="py-2">Start a Discussion</h2> 

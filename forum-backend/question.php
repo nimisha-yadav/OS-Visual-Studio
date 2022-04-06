@@ -83,7 +83,7 @@
 						$showAlert=true;
 						if($showAlert)
 						{
-							echo '<script>window.alert("Your thread has been added! Please wait for community to respond")</script>';
+							echo '<script>window.alert("Your comment has been added! Thanks for helping the community.")</script>';
 							echo ' <div class="alert alert-success alert-dismissible fade show shadow">
                         		<strong>Success!</strong> Your thread has been added! Please wait for community to respond
                         		<button type="button" class="btn-close" data-bs-dismiss="alert">
@@ -164,7 +164,7 @@
 										<div class="jumbotron" style="background-color:#d8d4d4">
 											<div class="container-1">
 												<p class="display-5"style="margin:2%; padding:1%">No Results Found</p>
-												<p class="lead" style="margin:2%; padding:1%"> Be the first person to ask a question</p>
+												<p class="lead" style="margin:2%; padding:1%"> Be the first person to answer this question.</p>
 											</div>
 							 			</div>
 									  </blockquote>';
