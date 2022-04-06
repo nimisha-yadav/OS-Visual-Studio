@@ -79,7 +79,7 @@ h3{
 
 .right{
   float: left;
-  display:flex;
+/*   display:flex; */
   text-align: center;
   padding-top: 30px;
 }
