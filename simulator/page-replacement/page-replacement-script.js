@@ -6,8 +6,23 @@ function fifo(){
 	var arr = inputs.value.split(" "); //split the inputs into an array
 	//number of frames
 	var frames = document.getElementById("nFrames").valueAsNumber;
-console.log(arr)
-
+	if(Number.isNaN(frames)){
+		alert("Enter the no. of frames");
+		location.reload();
+	}
+// console.log(arr)
+ var length_of_reference_string=arr.length;
+// console.log(length_of_reference_string);
+	var max_size=25;
+if(length_of_reference_string>max_size){
+alert("Reference string should be of size 25");
+location.reload();
+}
+if(length_of_reference_string==1){
+	if(arr[0]=="")
+	{alert("Enter valid Order of Pages");
+	location.reload();}
+}
 	//list to be updated
 	var list = [];
 
@@ -90,13 +105,13 @@ var k=0;
 			let ind = Number.MAX_VALUE, val = Number.MIN_VALUE;
 		 	// alert(temp);
 		  for (let x=0;x<temp.length;x++) {
-		 							 let temp1 = temp[x];
-		 							 // alert(indexes.get(temp1));
-		 							 if (indexes.get(temp1) < ind) {
-		 									 ind = indexes.get(temp1);
-		 									 val = temp1;
-		 							 }
-		 					 }
+			  let temp1 = temp[x];
+			  // alert(indexes.get(temp1));
+			  if (indexes.get(temp1) < ind) {
+				  ind = indexes.get(temp1);
+				  val = temp1;
+			  }
+		 }
 
 
 		 	var to_delete=temp.indexOf(val);
@@ -107,17 +122,6 @@ var k=0;
 		 	// alert(temp);
 		 	fault++;
 		 	indexes.set(arr[i],i);
-
-			// var get_index=temp.indexOf(arr[k++]);
-			// temp.splice(get_index,1);
-			// //temp.shift();
-			// temp.splice(get_index,0,arr[i]);
-			// console.log('yo')
-			// fault++;
-
-
-
-
 		}
 
 		else if(!temp.includes(arr[i]))
@@ -155,7 +159,6 @@ var k=0;
 	document.getElementById("algo").innerHTML = " Algorithm : First in first out (FIFO)";
 
 	document.getElementById("faults").innerHTML ="Page faults: "+fault;
-	// document.getElementById("faultRat").innerHTML += ratio.toFixed(2);
 	document.getElementById("faultrate").innerHTML ="Page fault Rate: "+rate.toFixed(2) + "" + "%";
 	document.getElementById("hits").innerHTML = "Page Hit: "+hit;
 	document.getElementById("hitrate").innerHTML = "Page Hit Rate: "+rate1.toFixed(2) + "" + "%";
@@ -163,9 +166,6 @@ var k=0;
 	document.getElementById("nums1").style.display = "block";
 	document.getElementById("nums").style.display = "block";
 	document.getElementById("nums2").style.display = "block";
-	// document.getElementById("fifoText").style.display = "block";
-	// document.getElementById("reload").style.display = "block";
-	// document.getElementById("credit").style.display = "block";
 }
 
 
@@ -178,8 +178,26 @@ function lru(){
 	var arr = inputs.value.split(" "); //split the inputs into an array
 	//number of frames
 	var frames = document.getElementById("nFrames").valueAsNumber;
-console.log(arr)
-
+	// console.log(frames);
+	if(Number.isNaN(frames)){
+		alert("Enter the no. of frames");
+		location.reload();
+	}
+// console.log(arr)
+var length_of_reference_string=arr.length;
+// console.log(length_of_reference_string);
+ var max_size=25;
+if(length_of_reference_string>max_size){
+alert("Reference string should be of size 25");
+location.reload();
+}
+   if(length_of_reference_string==1){
+  if(arr[0]=="")
+ {
+	 alert("Enter valid Order of Pages");
+ location.reload();
+}
+}
 	//list to be updated
 	var list = [];
 
@@ -259,30 +277,16 @@ console.log(arr)
 		}
 		else if((temp.length >= frames) && !(temp.includes(arr[i])))
 		{
-		 // var get_index=temp.indexOf(arr[x]);
-		 // x++;
-		 // console.log(temp);
- 		 // temp.splice(get_index,1);
- 		 // //temp.shift();
- 		 // temp.splice(get_index,0,arr[i]);
- 		 // console.log(temp);
- 		 // fault++;
-
-     let ind = Number.MAX_VALUE, val = Number.MIN_VALUE;
+			let ind = Number.MAX_VALUE, val = Number.MIN_VALUE;
 		 	// alert(temp);
 		 for (let x=0;x<temp.length;x++) {
-									 let temp1 = temp[x];
-									 // alert(indexes.get(temp1));
-									 if (indexes.get(temp1) < ind) {
-											 ind = indexes.get(temp1);
-											 val = temp1;
-									 }
-							 }
-
-							  // s.delete(val);
-                // indexes.delete(val);
-                // s.add(pages[i]);
-                // page_faults++;
+			let temp1 = temp[x];
+			 // alert(indexes.get(temp1));
+			 if (indexes.get(temp1) < ind) {
+				 ind = indexes.get(temp1);
+		 		 val = temp1;
+		          }
+		}
 
       var to_delete=temp.indexOf(val);
 			temp.splice(to_delete,1);
@@ -292,10 +296,6 @@ console.log(arr)
 			// alert(temp);
 			fault++;
 			indexes.set(arr[i],i);
-			// temp.unshift(arr[i]);
-			// console.log('yo')
-			// fault++;
-			// console.log(fault);
       }
 		else if(!temp.includes(arr[i]))
 		{
@@ -308,9 +308,6 @@ console.log(arr)
 
 		else if(temp.includes(arr[i]))
 		{
-			//var t = temp.splice(temp.indexOf(arr[i]), 1);
-			//console.log(t);
-			//temp.push(t);
 			indexes.set(arr[i],i);
 			console.log(temp)
 			list=temp;
@@ -338,7 +335,6 @@ console.log(arr)
 	document.getElementById("algo").innerHTML = "Algorithm : Least Recently Used (LRU)";
 
 	document.getElementById("faults").innerHTML ="Page faults: "+ fault;
-	// document.getElementById("faultRat").innerHTML += ratio.toFixed(2);
 	document.getElementById("faultrate").innerHTML = "Page fault Rate: "+rate.toFixed(2) + "" + "%";
 	document.getElementById("hits").innerHTML = "Page Hit: "+hit;
 	document.getElementById("hitrate").innerHTML = "Page Hit Rate: "+rate1.toFixed(2) + "" + "%";
@@ -346,9 +342,6 @@ console.log(arr)
 	document.getElementById("nums1").style.display = "block";
 	document.getElementById("nums").style.display = "block";
 	document.getElementById("nums2").style.display = "block";
-	// document.getElementById("lruText").style.display = "block";
-	// document.getElementById("reload").style.display = "block";
-	// document.getElementById("credit").style.display = "block";
 }
 
 function opt(){
@@ -358,8 +351,23 @@ function opt(){
     var arr = inputs.value.split(" "); //split the inputs into an array
     //number of frames
     var frames = document.getElementById("nFrames").valueAsNumber;
-    console.log(arr)
-
+		if(Number.isNaN(frames)){
+			alert("Enter the no. of frames");
+			location.reload();
+		} 
+    console.log(arr);
+		var length_of_reference_string=arr.length;
+	 // console.log(length_of_reference_string);
+		 var max_size=25;
+	 if(length_of_reference_string>max_size){
+	 alert("Reference string should be of size 25");
+	 location.reload();
+	 }
+	 if(length_of_reference_string==1){
+		 if(arr[0]=="")
+		 {alert("Enter valid Order of Pages");
+		 location.reload();}
+	 }
     //list to be updated
     var list = [];
 
@@ -454,58 +462,24 @@ function opt(){
 	                // Return the page which are
 	               // are never referenced in future,
 	                     if (y == arr.length){
-												 		 ans=x;
-														 break;
-											 }
+			         ans=x;
+				 break;									 }
                  }
              // If all of the frames were not in future,
              // return any of them, we return 0. Otherwise
              // we return res.
-                // if(res==-1) ans=0;
-                // else ans=res;
-								if(ans!=-1){
-									temp[ans]=arr[i];
-								}
-								else{
-									ans= (res == -1) ? 0 : res;
-									 temp[ans]=arr[i];
-								}
+           
+		if(ans!=-1){
+		   temp[ans]=arr[i];
+		}
+		else{
+	        ans= (res == -1) ? 0 : res;
+		 temp[ans]=arr[i];
+	       }
              list = temp;
               fault++;
 }
 
-
-
-
-
-				//
-				// 		var sarr = arr.slice(arr.indexOf(arr[i]),arr.length);
-        //     console.log(sarr);
-        //     //temp.shift();
-        //     var x = [];
-        //     var b = 0;
-        //     for(a=0;a<sarr.length;a++){
-        //         if(b < temp.length - 1){
-        //             for(c=0;c<temp.length;c++){
-        //                 if (sarr[a] == temp[c] && !(x.includes(temp[c]))){
-        //                     x.push(temp[c]);
-        //                     b++;
-        //                     console.log(b);
-        //                     break;
-        //                 }
-        //             }
-        //         }
-        //         else{
-        //             break;
-        //         }
-        //     }
-        //     temp = x;
-        //     temp.push(arr[i]);
-        //     console.log('yo');
-        //     console.log(temp);
-        //     list = temp;
-        //     fault++;
-        // }
 
         else if(!temp.includes(arr[i]))
         {
@@ -544,7 +518,6 @@ function opt(){
 	document.getElementById("algo").innerHTML =  "Algorithm : Optimal (OPT)";
 
 	document.getElementById("faults").innerHTML ="Page faults: "+ fault;
-	// document.getElementById("faultRat").innerHTML += ratio.toFixed(2);
 	document.getElementById("faultrate").innerHTML = "Page fault Rate: "+rate.toFixed(2) + "" + "%";
 	document.getElementById("hits").innerHTML = "Page Hit: "+hit;
 	document.getElementById("hitrate").innerHTML = "Page Hit Rate: "+rate1.toFixed(2) + "" + "%";
@@ -552,9 +525,6 @@ function opt(){
 	document.getElementById("nums1").style.display = "block";
     document.getElementById("nums").style.display = "block";
     document.getElementById("nums2").style.display = "block";
-    // document.getElementById("optText").style.display = "block";
-    // document.getElementById("reload").style.display = "block";
-    // document.getElementById("credit").style.display = "block";
 }
 var count_click=0;
 function submit(){
@@ -564,7 +534,7 @@ function submit(){
 	// 	alert("Enter the values again");
 	// 	reset();
 	// }
-	//document.getElementById("body1").style.height = "130%";
+	// document.getElementById("body1").style.height = "130%";
 	var select = document.getElementById('select');
 	//var option = ['First in first Out (FIFO)','Least Recently Used (LRU)']
 
