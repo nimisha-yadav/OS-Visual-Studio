@@ -1,88 +1,48 @@
 !DOCTYPE HTML>
 <html>
 	<head>
-		<title>Contact - OS Visual Studio</title>
+		<title>OS Visual Studio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/OS.ico" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/design.css" />
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
-<header id="header">
-					<h1><a href="index.html">OS</a> Visual Studio</h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="index.html#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
-								<ul>
-									<li>
-										<a href="generic.html">CPU Scheduling</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="contact.html">Page Replacement</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="elements.html">Disk Scheduling</a>
-										<ul>
-											<li><a href="#">FCFS Algorithm</a></li>
-											<li><a href="#">SSTF Algorithm</a></li>
-											<li><a href="#">SCAN Algorithm</a></li>
-											<li><a href="#">CSCAN Algorithm</a></li>
-											<li><a href="#">LOOK Algorithm</a></li>
-											<li><a href="#">CLOOK Algorithm</a></li>
-											<li><a href="#">LIFO Algorithm</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="elements.html">Deadlock Avoidance</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="elements.html">Deadlock Detection</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Memory Allocation</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="index.html#main">About</a></li>
-							<li><a href="index.html">Settings</a></li>
-							<li><a href="index.html">Discussion Forum</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="#" class="button">Sign Up</a></li>
-						</ul>
-					</nav>
-				</header>
+			<header id="header">
+          <h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
+          <nav id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="index.html#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
+                <ul>
+                  <li>
+                    <a href="cpu-scheduling.html">CPU Scheduling</a>
+                  </li>
+                  <li>
+                    <a href="disk-scheduling.html">Disk Scheduling</a>
+                  </li>
+                  <li>
+                    <a href="page-replacement.html">Page Replacement</a>
+                  </li>
+                  <li>
+                    <a href="deadlock-avoidance.html">Deadlock Avoidance</a>
+                  </li>
+                  <li>
+                    <a href="memory-allocation.html">Memory Allocation</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="tutorial.html">Tutorial</a></li>
+              <li><a href="forum-backend/forum.php">Discussion Forum</a></li>
+              <li><a href="index.html#team">About Team</a></li>
+              <li><a href="contact.php">Contact</a></li>
+              <li><a href="#" class="button">Sign Up</a></li>
+            </ul>
+          </nav>
+        </header>
 
 
 	<center>
@@ -109,21 +69,17 @@
 			<textarea id="body" rows="5" placeholder="Type Message"></textarea>
 			<br><br>
 
-		<button class="button" onclick="sendEmail()" value="Send An Email">Submit</button>
+		<button class="button " onclick="sendEmail()" value="Send An Email" style="font-family:'Source Sans Pro';font-size:18px;">Submit</button>
 		</form>
 	</center>
 
-  <footer id="footer">
+ 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="https://github.com/nimisha-yadav/OS-Visual-Studio" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:osvisstudio@gmail.com" class="icon brands fa-google"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; <a href="http://github.com">OS Visual Studio.</a>   All rights reserved.</li>
+						<li>&copy; <a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS Visual Studio. </a>   All Rights Reserved.</li>
 					</ul>
 				</footer>
 </div>
