@@ -29,10 +29,6 @@
 		<?php include '../partials/_signupModal.php';?>
 		<?php include '../partials/_loginModal.php';?>
 		<?php include '../partials/_dbconnect.php';
-		
-		if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true"){
-			echo '<script>alert("Welcome to OS Visual Studio | Discussion Forum")</script>';
-		}
 		?>
 
 		<div id="page-wrapper">
@@ -146,4 +142,12 @@
 			<script src="../assets/js/main.js"></script>
 
 	</body>
+		<?php
+		if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true"){
+			echo '<script>window.onload = function(){
+				alert("Welcome to OS Visual Studio | Discussion Forum")}
+			      </script>';
+			
+		}
+		?>
 </html>
