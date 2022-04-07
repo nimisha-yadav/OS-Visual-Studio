@@ -49,6 +49,7 @@
 			</header>
 
         <!-- Main -->
+          <!-- Main -->
           <section id="main" class="container">
             <header>
               <h2>Disk Scheduling Algorithms</h2>
@@ -57,7 +58,7 @@
 
 
             <div class="box">
-              <span class="image featured"><img src="images/disk-sch.jpg" alt="" /></span>
+              <span class="image featured"><img src="pic01.jpg" alt="" /></span>
               <h3>What is Disk Scheduling?</h3>
               <p>Disk Scheduling is a technique used by the operating system to schedule multiple
       requests for accessing the disk. Disk Scheduling is also called Input/Output Scheduling.</p>
@@ -75,35 +76,13 @@
                 <div class="row-6 row-12-mobilep">
                   <h3>Demo of Disk Scheduling Algorithms</h3>
                   <p>In this section, we shall visualise the working of Disk Scheduling Algorithms through analysing the algorithm chart and the comparison chart.</p>
-                  <script>
-                    function admSelectCheck(nameSelect)
-                    {
-                        console.log(nameSelect);
-                        if(nameSelect){
-                            x3 = document.getElementById("o3").value;
-                            x4 = document.getElementById("o4").value;
-                            x5 = document.getElementById("o5").value;
-                            x6 = document.getElementById("o6").value;
-                            x7 = document.getElementById("o7").value;
-                            if(x3 == nameSelect.value || x4 == nameSelect.value || x5 == nameSelect.value || x6 == nameSelect.value || x7 == nameSelect.value){
-                                document.getElementById("admDivCheck").style.display = "block";
-                            }
-                            else{
-                                document.getElementById("admDivCheck").style.display = "none";
-                            }
-                        }
-                        else{
-                            document.getElementById("admDivCheck").style.display = "none";
-                        }
-                    }
-                    </script>
                     <div class="left transform">
                       <form name="myForm">
                         <fieldset>
                             <div class="row2">
                                 <div class="form-group">
                                     <label for="exampleSelect1">Algorithm</label>
-                                      <select class="form-control" id="algorithm" >
+                                      <select class="form-control" id="algorithm" onchange="admSelectCheck(this);" >
                                         <option id="o1" value="fcfs" >FCFS</option>
                                         <option id="o2" value="sstf" >SSTF</option>
                                         <option id="o3" value="scan" >SCAN</option>
@@ -113,7 +92,7 @@
                                       </select>
                                 </div>
                                 <br>
-                                <div class="form-group" id="second" id="admDivCheck">
+                                <div class="form-group" id="admDivCheck" id="second" style="display:none;">
                                     <label for="exampleSelect1">Direction</label>
                                       <select class="form-control" id="direction">
                                         <option value="left" selected="selected">Left</option>
@@ -146,11 +125,11 @@
                             </div>
                         </fieldset>
                       </form>
-		     <ul class="actions special">
-			<li><button type="submit" id="plot-button" class="button icon solid fa-calculator" onclick="getBitStreamAndPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('algorithm').value,document.getElementById('direction').value)">&nbsp;Calculate&nbsp;</button></li>
-                        <li><button type="submit" id="animate-button" class="button icon solid fa-download"> Download Results</button></li>
-                        <li><button type="button" id="reset" class="button icon solid fa-undo" onClick="window.location.reload();">Reset</button></li>
-		    </ul>
+			    <ul class="actions special">
+				    <li><button type="submit" id="plot-button" class="button icon solid fa-calculator" onclick="getBitStreamAndPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('algorithm').value,document.getElementById('direction').value)">&nbsp;Calculate&nbsp;</button></li>
+				    <li><button type="submit" id="animate-button" class="button icon solid fa-download"> Download Results</button></li>
+				    <li><button type="button" id="reset" class="button icon solid fa-undo" onClick="window.location.reload();">Reset</button></li>
+			    </ul>
 
                     </div>
 
