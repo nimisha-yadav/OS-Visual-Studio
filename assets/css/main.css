@@ -3300,69 +3300,69 @@
 					padding-left: 0;
 				}
 
-/* CTA */
+/* team */
 
-	#cta {
+	#team {
 		background: #e89980;
 		color: #f9e6df;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
 	}
 
-		#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
+		#team h2, #team h5, #team h6 {
 			color: inherit;
 		}
 
-		#cta form {
+		#team form {
 			margin: 0 auto;
 			max-width: 100%;
 			width: 25em;
 		}
 
-		#cta input[type="submit"],
-		#cta input[type="reset"],
-		#cta input[type="button"],
-		#cta .button {
+		#team input[type="submit"],
+		#team input[type="reset"],
+		#team input[type="button"],
+		#team .button {
 			box-shadow: none;
 			background: #fff;
 			color: #e89980;
 		}
 
-		#cta input[type="text"],
-		#cta input[type="password"],
-		#cta input[type="email"],
-		#cta select,
-		#cta textarea {
+		#team input[type="text"],
+		#team input[type="password"],
+		#team input[type="email"],
+		#team select,
+		#team textarea {
 			color: #ffffff;
 			background: rgba(255, 255, 255, 0.15);
 			border: 0;
 		}
 
-			#cta input[type="text"]:focus,
-			#cta input[type="password"]:focus,
-			#cta input[type="email"]:focus,
-			#cta select:focus,
-			#cta textarea:focus {
+			#team input[type="text"]:focus,
+			#team input[type="password"]:focus,
+			#team input[type="email"]:focus,
+			#team select:focus,
+			#team textarea:focus {
 				box-shadow: inset 0 0 0 2px #fff;
 			}
 
-		#cta ::-webkit-input-placeholder {
+		#team ::-webkit-input-placeholder {
 			color: rgba(255, 255, 255, 0.75) !important;
 		}
 
-		#cta :-moz-placeholder {
+		#team :-moz-placeholder {
 			color: rgba(255, 255, 255, 0.75) !important;
 		}
 
-		#cta ::-moz-placeholder {
+		#team ::-moz-placeholder {
 			color: rgba(255, 255, 255, 0.75) !important;
 		}
 
-		#cta :-ms-input-placeholder {
+		#team :-ms-input-placeholder {
 			color: rgba(255, 255, 255, 0.75) !important;
 		}
 
-		#cta .formerize-placeholder {
+		#team .formerize-placeholder {
 			color: rgba(255, 255, 255, 0.75) !important;
 		}
 
@@ -3889,9 +3889,9 @@
 				margin-top: 0;
 			}
 
-		/* CTA */
+		/* team */
 
-			#cta {
+			#team {
 				padding: 2.5em 1em 3em 1em;
 			}
 
