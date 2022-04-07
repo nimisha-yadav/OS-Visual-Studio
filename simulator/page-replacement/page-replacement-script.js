@@ -15,7 +15,7 @@ function fifo(){
 // console.log(length_of_reference_string);
 	var max_size=25;
 if(length_of_reference_string>max_size){
-alert("Reference string should be of size 25");
+alert("Reference string should be of size less than or equal to 25");
 location.reload();
 }
 if(length_of_reference_string==1){

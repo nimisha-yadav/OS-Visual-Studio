@@ -4,6 +4,7 @@
 		<title>Page Replacement Algorithms - OS Visual Studio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" href="images/OS.ico" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="simulator/page-replacement/page-replacement-layout.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +16,7 @@
 
       <!-- Header -->
         <header id="header">
-          <h1><a href="index.html">OS</a> Visual Studio</h1>
+          <h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
           <nav id="nav">
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -23,74 +24,31 @@
                 <a href="index.html#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
                 <ul>
                   <li>
-                    <a href="CPU_Scheduling_Algorithms.html">CPU Scheduling</a>
-                    <ul>
-                      <li><a href="#">Option One</a></li>
-                      <li><a href="#">Option Two</a></li>
-                      <li><a href="#">Option Three</a></li>
-                      <li><a href="#">Option Four</a></li>
-                    </ul>
+                    <a href="cpu-scheduling.html">CPU Scheduling</a>
                   </li>
                   <li>
-                    <a href="contact.html">Page Replacement</a>
-                    <ul>
-                      <li><a href="#">Option One</a></li>
-                      <li><a href="#">Option Two</a></li>
-                      <li><a href="#">Option Three</a></li>
-                      <li><a href="#">Option Four</a></li>
-                    </ul>
+                    <a href="disk-scheduling.html">Disk Scheduling</a>
                   </li>
                   <li>
-                    <a href="elements.html">Disk Scheduling</a>
-                    <ul>
-                      <li><a href="#">FCFS Algorithm</a></li>
-                      <li><a href="#">SSTF Algorithm</a></li>
-                      <li><a href="#">SCAN Algorithm</a></li>
-                      <li><a href="#">CSCAN Algorithm</a></li>
-                      <li><a href="#">LOOK Algorithm</a></li>
-                      <li><a href="#">CLOOK Algorithm</a></li>
-                      <li><a href="#">LIFO Algorithm</a></li>
-                    </ul>
+                    <a href="page-replacement.html">Page Replacement</a>
                   </li>
                   <li>
-                    <a href="elements.html">Deadlock Avoidance</a>
-                    <ul>
-                      <li><a href="#">Option One</a></li>
-                      <li><a href="#">Option Two</a></li>
-                      <li><a href="#">Option Three</a></li>
-                      <li><a href="#">Option Four</a></li>
-                    </ul>
+                    <a href="deadlock-avoidance.html">Deadlock Avoidance</a>
                   </li>
                   <li>
-                    <a href="elements.html">Deadlock Detection</a>
-                    <ul>
-                      <li><a href="#">Option One</a></li>
-                      <li><a href="#">Option Two</a></li>
-                      <li><a href="#">Option Three</a></li>
-                      <li><a href="#">Option Four</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Memory Allocation</a>
-                    <ul>
-                      <li><a href="#">Option One</a></li>
-                      <li><a href="#">Option Two</a></li>
-                      <li><a href="#">Option Three</a></li>
-                      <li><a href="#">Option Four</a></li>
-                    </ul>
+                    <a href="memory-allocation.html">Memory Allocation</a>
                   </li>
                 </ul>
               </li>
-              <li><a href="index.html#main">About</a></li>
-              <li><a href="index.html">Settings</a></li>
-              <li><a href="index.html">Discussion Forum</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="tutorial.html">Tutorial</a></li>
+              <li><a href="forum-backend/forum.php">Discussion Forum</a></li>
+              <li><a href="index.html#team">About Team</a></li>
+              <li><a href="contact.php">Contact</a></li>
               <li><a href="#" class="button">Sign Up</a></li>
             </ul>
           </nav>
         </header>
 
-<!-- Main -->
 <!-- Main -->
 <section id="main" class="container">
   <header>
@@ -100,15 +58,15 @@
 
 
   <div class="box">
-    <span class="image featured"><img src="pic01.jpg" alt="" /></span>
+    <span class="image featured"><img src="images/page-rep.jpg" alt="" /></span>
     <h3>What is Page Replacement?</h3>
     <p class="para">In an operating system that uses paging for memory management, a page replacement algorithm is needed to decide which page needs to be replaced when new page comes in.</p>
     <div class="row">
       <div class="row-6 row-12-mobilep">
 				<h3>Important Terminologies</h3>
         <p class="para">
-           <li>Page Fault:A page fault is an interruption that occurs when a software program attempts to access a memory block not currently stored in the system's RAM.The page fault is also called page miss.</li>
-           <li>Page Hit:When we want to load the page on the memory, and the page is already available on memory, then it is called page hit.</li>
+           <li>Page Fault: A page fault is an interruption that occurs when a software program attempts to access a memory block not currently stored in the system's RAM. The page fault is also called page miss.</li>
+           <li>Page Hit: When we want to load the page on the memory, and the page is already available on memory, then it is called page hit.</li>
            <li>Page Fault Rate: A page fault will occur for every certain amount of main memory access,which is called page fault rate. </li>
            <li>Page Hit Rate: The percentage of times that a particular page number is found in the TLB is called the Page hit ratio.</li>
            </p>
@@ -118,7 +76,7 @@
         <p class="para">In this section, we shall visualise Page Replacement Algorithms through frames table.</p>
 
         <div class="center">
-  				<span>Algorithm :</span>
+  				<form><span>Algorithm :</span></form>
   				<select class="select" id="select">
   					<option></option>
   					<option selected="selected" value="First in first Out (FIFO)">First in first Out (FIFO)</option>
@@ -127,10 +85,10 @@
   				</select>
 
   				<form action="action.php" method="GET">
-  					<label for="nFrames" for="inputs" >Number of frames :</label>
+            <br>
+  					<label for="nFrames" for="inputs" >Number of frames : <br></label>
   					<input type="number" id="nFrames" name="frames" >
-  					<br>
-
+            <form><br></form>
   					<label for="inputs" class="label-1">Order of pages : </label>
   					<input type="text" id="inputs" placeholder="Space separated integers" name="in" class="input-1">
   					<br>
@@ -196,14 +154,14 @@
 </div>
 </section>
       <footer id="footer">
-        <ul class="icons">
-          <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-          <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </footer>
+          <ul class="icons">
+            <li><a href="https://github.com/nimisha-yadav/OS-Visual-Studio" class="icon brands fa-github"><span class="label">Github</span></a></li>
+            <li><a href="mailto:osvisstudio@gmail.com" class="icon brands fa-google"><span class="label">Email</span></a></li>
+          </ul>
+          <ul class="copyright">
+            <li>&copy; <a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS Visual Studio. </a>   All Rights Reserved.</li>
+          </ul>
+        </footer>
 
       </div>
 
