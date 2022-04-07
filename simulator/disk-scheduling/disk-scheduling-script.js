@@ -11,324 +11,30 @@ $(function () {
         });
 });
 
-//
-// $("#animate-button").click(function() {
-//         var btn1 = document.getElementById("animate-button");
-//         btn1.disabled= true;
-//         var b = document.forms["myForm"]["bitstream-input"].value;
-//         var i = document.forms["myForm"]["initial-input"].value;
-//         if(b == ""){
-//                 alert("Enter the Sequence of Request queue!");
-//                 return false;
-//         }
-//         if (b!= "" && i == "") {
-//                 alert("Enter the value of Initial Cylinder!");
-//                 return false;
-//         }
-//
-//         var ini = parseInt(document.getElementById('initial-input').value);
-//         var final =  parseInt(document.getElementById('final-input').value);
-//         var str = document.getElementById('bitstream-input').value;
-//         var dir = document.getElementById('direction').value;
-//
-//         var inp=[],r2=str.split(" "),r3;
-//         for(a1=0;a1<r2.length;++a1){
-//                 if(r2[a1]==""){continue;}
-//                 r3=parseInt(r2[a1]);
-//                 inp.push(r3);
-//
-//                 if((r3>parseInt(final)) || (parseInt(ini)>parseInt(final))){
-//                                 alert("Invalid Input: Final cylinder has to be Greater!");
-//                                 return;
-//                 }
-//         }
-//
-//         final=parseInt(final);
-//         ini=parseInt(ini);
-//
-//         if($('div.left').hasClass('transform') && window.matchMedia("(min-width: 1249px)").matches) {
-//                 $('.left').css("width", "30%");
-//                 $('.left').css("margin", "30px");
-//                 $('#plot-button').css("margin-left", "30px");
-//                 $('#plot-button').css("margin-bottom", "5%");
-//                 $('#animate-button').css("margin-bottom", "5%");
-//                 $('#cmpr-button').css("margin-left", "25%");
-//                 $('.container2').css("top", "800px");
-//                 $('.container3').css("top", "1500px");
-//
-//
-//
-//                 setTimeout(function(){
-//                         document.getElementById("canvas").style.visibility = "visible";
-//                         myalgorithm(document.getElementById('algorithm').value, inp, ini, final, dir);
-//                 }, 500);
-//
-//         }
-//
-//         else if(window.matchMedia("(min-width: 992px)").matches) {
-//                 document.getElementById("canvas").style.visibility = "visible";
-//                 myalgorithm(document.getElementById('algorithm').value, inp, ini, final, dir);
-//                 $('.container2').css("top", "1250px");
-//         }
-//
-//         else if(window.matchMedia("(min-width: 768px").matches) {
-//                 document.getElementById("canvas").style.visibility = "visible";
-//                 myalgorithm(document.getElementById('algorithm').value, inp, ini, final, dir);
-//                 $('.container2').css("top", "1500px");
-//         }
-//
-//         else if(window.matchMedia("(min-width: 600px").matches){
-//                 document.getElementById("canvas").style.visibility = "visible";
-//                 myalgorithm(document.getElementById('algorithm').value, inp, ini, final, dir);
-//                 $('.container2').css("top", "1450px");
-//
-//         }
-//         else {
-//                 document.getElementById("canvas").style.visibility = "visible";
-//                 myalgorithm(document.getElementById('algorithm').value, inp, ini, final, dir);
-//                 $('.container2').css("top", "1350px");
-//         }
-// });
-//
-//
-//
-//
-// /**** ANIMATION ****/
-//
-//
-// function myalgorithm(alg, inp, ini, final, dir){
-//
-//         if(alg=="fcfs"){
-//                 var op = fcfs(inp, ini, final);
-//                 var target = op[0];
-//                 var seek = op[1];
-//                 animation(target[0].x);
-//                 document.getElementById("am_alg_name").innerHTML = "FCFS";
-//                 document.getElementById("am_alg_seek").innerHTML = "Total Seek Time: " + seek;
-//         }
-//
-//         if(alg=="sstf"){
-//                 var op = sstf(inp, ini, final);
-//                 var target = op[0];
-//                 var seek = op[1];
-//                 animation(target[0].x);
-//                 document.getElementById("am_alg_name").innerHTML = "SSTF";
-//                 document.getElementById("am_alg_seek").innerHTML = "Total Seek Time: " + seek;
-//         }
-//
-//         if(alg=="scan"){
-//                 var f = document.forms["myForm"]["final-input"].value;
-//
-//                 if(f == ""){
-//                         alert("Enter the value of Final Cylinder");
-//                         return false;
-//                 }
-//
-//                 var op = scan(inp, ini, final, dir);
-//                 var target = op[0];
-//                 var seek = op[1];
-//                 console.log(seek);
-//                 animation(target[0].x);
-//                 document.getElementById("am_alg_name").innerHTML = "SCAN";
-//                 document.getElementById("am_alg_seek").innerHTML = "Total Seek Time: " + seek;
-//         }
-//
-//         if(alg=="c-scan"){
-//                 var f = document.forms["myForm"]["final-input"].value;
-//
-//                 if(f == ""){
-//                         alert("Enter the value of Final Cylinder");
-//                         return false;
-//                 }
-//
-//                 var op = cscan(inp, ini, final, dir);
-//                 var target = op[0];
-//                 var seek = op[1];
-//                 var seq = [...target[0].x, ...target[1].x, ...target[2].x];
-//                 animation(seq);
-//                 document.getElementById("am_alg_name").innerHTML = "C-SCAN";
-//                 document.getElementById("am_alg_seek").innerHTML = "Total Seek Time: " + seek;
-//         }
-//
-//         if(alg=="look"){
-//                 var op = look(inp, ini, final, dir);
-//                 var target = op[0];
-//                 var seek = op[1];
-//                 animation(target[0].x);
-//                 document.getElementById("am_alg_name").innerHTML = "LOOK";
-//                 document.getElementById("am_alg_seek").innerHTML = "Total Seek Time: " + seek;
-//         }
-//
-//         if(alg=="c-look"){
-//                 var op = clook(inp, ini, final, dir);
-//                 var target = op[0];
-//                 var seek = op[1];
-//                 var seq = [...target[0].x, ...target[1].x, ...target[2].x];
-//                 animation(seq);
-//                 document.getElementById("am_alg_name").innerHTML = "C-LOOK";
-//                 document.getElementById("am_alg_seek").innerHTML = "Total Seek Time: " + seek;
-//         }
-//
-// }
-//
-// function animation(values) {
-//
-//         var canvas = document.getElementById("canvas");
-//         var ctx = canvas.getContext("2d");
-//
-//         var cx = 350;
-//         var cy = 320;
-//         var PI2 = Math.PI * 2;
-//         var radius = 0;
-//         var totRadius = 0;
-//
-//         var circles = [];
-//
-//         const target = values;
-//         var max = Math.max(...target);
-//
-//         if(max > 30){
-//                 alert("Please Enter values beween 1 to 30 to visualize Animation !");
-//                 return;
-//         }
-//
-//         addCircle(20, "black");
-//
-//         for(i=0; i<30; i++) {
-//             addCircle(10, "#A79C9D");
-//         }
-//
-//         var targetIndex = 1;
-//
-//
-//         function addCircle(lineWidth, color) {
-//           if (radius == 0) {
-//             radius = lineWidth / 2;
-//           } else {
-//             radius += lineWidth;
-//           }
-//           totRadius = radius + lineWidth / 2;
-//           circles.push({
-//             radius: radius,
-//             color: color,
-//             width: lineWidth
-//           });
-//         }
-//
-//
-//         function drawCircle(circle, color) {
-//           ctx.beginPath();
-//           ctx.arc(cx, cy, circle.radius, 0, PI2);
-//           ctx.closePath();
-//           ctx.lineWidth = circle.width;
-//           ctx.strokeStyle = color;
-//           ctx.stroke();
-//         }
-//
-//         function canvas_arrow(context, fromx, fromy, tox, toy) {
-//
-//           var headlen = 5; // length of head in pixels
-//           var dx = tox - fromx;
-//           var dy = toy - fromy;
-//           var angle = Math.atan2(dy, dx);
-//           context.moveTo(fromx, fromy);
-//           context.lineTo(tox, toy);
-//           context.lineTo(tox - headlen * Math.cos(angle - Math.PI / 6), toy -   headlen * Math.sin(angle - Math.PI / 6));
-//           context.moveTo(tox, toy);
-//           context.lineTo(tox - headlen * Math.cos(angle + Math.PI / 6), toy -   headlen * Math.sin(angle + Math.PI / 6));
-//         }
-//
-//
-//         var fps = 1;
-//         let request;
-//         var sik ="Seek-Time: ";
-//         function animate() {
-//
-//
-//             setTimeout(function() {
-//             request = requestAnimationFrame(animate);
-//
-//             // Drawing code goes here
-//             sik = sik + "|" + target[targetIndex].toString() + "-" + target[targetIndex-1].toString() + "|";
-//             document.getElementById("cl-seek").innerHTML = sik;
-//             sik = sik + "+";
-//
-//
-//             ctx.clearRect(0, 0, canvas.width, canvas.height);
-//             for(var i=0; i< circles.length; i++)
-//                 {
-//                     var circle = circles[i];
-//                     var color = circle.color;
-//                     drawCircle(circles[i], color);
-//                 }
-//
-//             for (var i = 0; i < circles.length; i++) {
-//               var circle = circles[i];
-//               var color = circle.color;
-//               var p_circle = circles[target[targetIndex-1]];
-//
-//               if (i == target[targetIndex]) {
-//                 color = "white";
-//                 ctx.font = "10px Arial";
-//                 ctx.fillStyle = "black";
-//                 drawCircle(circles[i], color);
-//
-//                 ctx.font = "15px Arial";
-//                 ctx.fillStyle = "darkblue";
-//                 ctx.fillText(i, 350 + circle.radius, 310);
-//                 ctx.fillStyle = "black";
-//                 ctx.fillText(target[targetIndex-1], 350 + p_circle.radius, 310);
-//                 ctx.textAlign = "center";
-//                 ctx.beginPath();
-//                 canvas_arrow(ctx, 350+p_circle.radius, 320, 350+circle. radius, 320);
-//                 ctx.strokeStyle = "black";
-//                 ctx.lineWidth = 3;
-//                 ctx.stroke();
-//               }
-//             }
-//
-//
-//             ctx.beginPath();
-//             ctx.arc(cx, cy, totRadius, 0, PI2);
-//             ctx.closePath();
-//             ctx.strokeStyle = "black";
-//             ctx.lineWidth = 5;
-//             ctx.stroke();
-//
-//             targetIndex++;
-//             if(targetIndex==target.length)
-//                 {
-//                         cancelAnimationFrame(request);
-//                         var btn = document.getElementById("animate-button");
-//                         btn.disabled= false;
-//
-//                 }
-//           }, 3000);
-//
-//         }
-//
-//         animate();
-//
-//
-//
-// } // END OF ANIMATION()
-// 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /***** GRAPH *****/
+function admSelectCheck(nameSelect)
+{
+    console.log(nameSelect);
+    console.log("hello");
+    if(nameSelect){
+      var  g3 = document.getElementById("o3").value;
+      var  g4 = document.getElementById("o4").value;
+      var  g5 = document.getElementById("o5").value;
+      var  g6 = document.getElementById("o6").value;
+      // var  g7 = document.getElementById("o7").value;
+        if(g3 == nameSelect.value || g4 == nameSelect.value || g5 == nameSelect.value || g6 == nameSelect.value){
+            document.getElementById("admDivCheck").style.display = "block";
+        }
+        else{
+            document.getElementById("admDivCheck").style.display = "none";
+        }
+    }
+    else{
+        document.getElementById("admDivCheck").style.display = "none";
+    }
+}
 
 var pre,v1,v2,v3,v4,v5,v6;
 
@@ -850,7 +556,6 @@ function getBitStreamAndPlot(event, r1, ini, final, alg, side){
         ini=parseInt(ini);
         dir=side;
         pre=1;
-
         if(alg=="fcfs"){
                 var alg_use = fcfs(inp, ini, final);
                 var plt_alg = "FCFS";
