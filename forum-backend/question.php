@@ -5,17 +5,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="../images/OS.ico" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+		<link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../assets/css/main1.css" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/design.css" />
+		<link rel="stylesheet" href="../assets/css/discussion.css" />
 
 		<style>
   				.modal-header, h4, .close {
@@ -67,6 +63,7 @@
 					</header>
 				</section>
             </section>
+            <br><br>
 
      		<!-- Main -->	
 
@@ -89,6 +86,7 @@
                         		<button type="button" class="btn-close" data-bs-dismiss="alert">
                         		</button>
                   				</div>';
+
 						}
 					}
 				?>
@@ -104,6 +102,7 @@
 											<textarea id="message" name="reply" rows="6" required></textarea>
 											<input type="hidden" name="user_id" value="'. $_SESSION["user_id"]. '">
 										</div>
+										<br>
 										<input type="submit" value="Submit" />
 									</form>
 								  </div>';
@@ -115,7 +114,7 @@
 					 					<div class="jumbotron" style="background-color:#d8d4d4">
 											<div class="container-1">
 												<p class="display-5"style="margin:2%; padding:1%"><b> You are not logged in! </b></p>
-												<p class="lead" style="margin:2%; padding:1%"> Login to post a comment </p>
+												<p class="lead" style="margin:2%; padding:1%"> Please login to post a comment. </p>
 											</div>
 					  					</div>
 									</blockquote>
@@ -125,7 +124,7 @@
 
                 <section class="container" id="os-algorithms">
 	                <div class="firstDiv">
-		               	<h1><b> View Discussions</b> </h1>
+		               	<h1><b> View Discussions</b></h1>
                       	
 						  <?php 
 
@@ -152,9 +151,9 @@
 
 								echo '<div class="media">
 										<img  class="img" src="../images/avtar.png"  class="mr-3" alt="..." >
-								  		<div class="mt"><b>
+								  		<div class="mt"><b class="qutz3">
 								  		' .$user_email . '</b> at '. $time_view .'
-								  		<p> '. $content . ' </p>
+								  		<p class="qutz4"> '. $content . ' </p>
 										</div>
 							  		</div>';
 							}

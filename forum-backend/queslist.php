@@ -5,11 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="../images/OS.ico" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		
+		<link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 		  <style>
@@ -26,6 +22,7 @@
 		  <link rel="stylesheet" href="../assets/css/main1.css" />
 		  <link rel="stylesheet" href="../assets/css/main.css" />
 		  <link rel="stylesheet" href="../assets/css/design.css" />
+		  <link rel="stylesheet" href="../assets/css/discussion.css" />
 	</head>
 
 	<body class="landing is-preload">
@@ -46,83 +43,6 @@
     ?>
     
 		<div id="page-wrapper">
-
-			<!-- Header -->
-				<!-- <header id="header" class="alt">
-					<h1><a href="../index.html">OS</a> Visual Studio</h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="../index.html">Home</a></li>
-							<li>
-								<a href="#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
-								<ul>
-									<li>
-										<a href="generic.html">CPU Scheduling</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="contact.html">Page Replacement</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="elements.html">Disk Scheduling</a>
-										<ul>
-											<li><a href="#">FCFS Algorithm</a></li>
-											<li><a href="#">SSTF Algorithm</a></li>
-											<li><a href="#">SCAN Algorithm</a></li>
-											<li><a href="#">CSCAN Algorithm</a></li>
-											<li><a href="#">LOOK Algorithm</a></li>
-											<li><a href="#">CLOOK Algorithm</a></li>
-											<li><a href="#">LIFO Algorithm</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="elements.html">Deadlock Avoidance</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="elements.html">Deadlock Detection</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Memory Allocation</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="#main">About</a></li>
-							<li><a href="index.html">Tutorial</a></li>
-							<li><a href="forum.php">Discussion Forum</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="#" class="button">Sign Up</a></li>
-						</ul>
-					</nav>
-				</header> -->
 
 			<!-- Banner -->
 				<section id="banner">
@@ -146,9 +66,9 @@
 
 						if($showAlert)
 						{
-							echo '<script>window.alert("Your thread has been added! Please wait for community to respond.")</script>';
+							echo '<script>window.alert("Your thread has been added! Please wait for someone to respond.")</script>';
 							echo ' 	<div class="alert alert-success alert-dismissible fade show shadow">
-                        	   		<strong>Success!</strong> Your thread has been added! Please wait for community to respond
+                        	   		<strong>Success!</strong> Your thread has been added! Please wait for someone to respond.
                         	   		<button type="button" class="btn-close" data-bs-dismiss="alert">
                                		</button>
                   			   		</div>';
@@ -164,6 +84,7 @@
 					// echo $_SESSION['user_id'];
 					echo '<div class="container">
 					<form action="'. $_SERVER["REQUEST_URI"] . '" method="post" autocomplete="off">
+						<br><br>
 						<h2 class="py-2">Start a Discussion</h2> 
 						<div class="form-group">
 							<label for="exampleInputEmail1">Problem Title</label>
@@ -174,18 +95,20 @@
 							<label for="exampleFormControlTextarea1">Elaborate Your Concern</label>
 							<textarea id="message" name="desc" rows="6" required></textarea>
 						</div>
+						<br>
 						<input type="submit" value="Submit" />
 					</form>
 					</div>';
 					}
 					else{
 						echo 	'<div class="container">
+									<br><br>
 									<h2 class="py-2">Start a Discussion</h2> 
 						 			<blockquote>
 									 <div class="jumbotron" style="background-color:#d8d4d4">
 										<div class="container-1">
 											<p class="display-5"style="margin:2%; padding:1%"><b> You are not logged in! </b></p>
-											<p class="lead" style="margin:2%; padding:1%"> Login to start a discussion </p>
+											<p class="lead" style="margin:2%; padding:1%"> Please login to participate in the discussion. </p>
 										</div>
 							 		 </div>
 									</blockquote>
@@ -195,7 +118,7 @@
 				?>
                       <div class="container" id="os-algorithms">
 	                  <div class="firstDiv">
-		               <h1><b> Browse Questions</b> </h1>
+		               <h1><b> Browse Questions</b> </h1><br>
   
                       <?php 
 							$id = $_GET['modid'];	
@@ -217,12 +140,12 @@
 								$user_email = $row2['user_email'];
 
 								echo '<blockquote><div class="media">
-								<img  class="img" src="../images/avtar.png"  class="mr-3" alt="..." >
-								<div class="mta"><b>
+								<img  class="img" src="../images/avtar.png"  class="mr-3" alt="...">
+								<div class="mta"><b class="qutz">
 									' .$user_email. '</b> at ' . $time_view .'
 									<br>
-								   <b><a style="font-style:normal;" href="question.php?quesid=' . $id. '">'. $title . '</a></b> 
-								  <p style="font-style:normal;"> '. $desc . ' </p>
+								   <b class="qutz1"><a style="font-style:normal;" href="question.php?quesid=' . $id. '">'. $title . '</a></b> 
+								  <p class="qutz2" style="font-style:normal;"> '. $desc . ' </p>
 								</div>
 							  </div></blockquote>';
 							}
@@ -230,8 +153,8 @@
 							if($noResult){
 								echo '<blockquote><div class="jumbotron" style="background-color:#d8d4d4">
 										<div class="container-1">
-											<p class="display-5"style="margin:2%; padding:1%">No Results Found</p>
-											<p class="lead" style="margin:2%; padding:1%"> Be the first person to ask a question</p>
+											<p class="display-5"style="margin:2%; padding:1%">No Results Found.</p>
+											<p class="lead" style="margin:2%; padding:1%"> Be the first person to ask a question.</p>
 										</div>
 									 </div></blockquote>';
 							}
