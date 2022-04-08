@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="../images/OS.ico" />
 		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css" />
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 		<style>
@@ -22,6 +22,7 @@
   		</style>
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/design.css" />
+		
 	</head>
 
 	<body class="landing is-preload">
@@ -79,7 +80,7 @@
 								echo '<div class="col-6 col-12-narrower">
 										<section class="box special">
 											<span class="image featured"><img src="../images/dis' .$id. '.jpeg" alt="" /></span>
-											<h3><a href="queslist.php?modid=' . $id . '">' . $mod . '</a></h3>
+											<h3>' . $mod . '</h3>
 											<p>' . $desc . '</p>
 											<ul class="actions special">
 											<li><a href="queslist.php?modid=' . $id . '" class="button alt">View Questions</a></li>
