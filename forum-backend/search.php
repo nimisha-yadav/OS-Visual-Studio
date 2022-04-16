@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="../images/OS.ico" />
 		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-		<link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 		<style>
@@ -20,9 +20,9 @@
     				background-color: #f9f9f9;
   				}
   		</style>
+
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/design.css" />
-		
 	</head>
 
 	<body class="landing is-preload">
@@ -32,25 +32,22 @@
 		<?php include '../partials/_dbconnect.php';
 		?>
 
+
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
 			
 			<!-- Banner -->
-				<section id="banner" style="background-image: url('../images/pic04.jpg'); background-size:cover;">
-					<h2>OS Visual Studio | Discussion Forum</h2>
-					<p>A dedicated forum to ask and answer queries related to Operating Systems and its algorithms.</p>
-					<p style="font-size:1.3rem;"><i>
-						<li>No Spam / Advertising / Self-promotion allowed in the forum. Remain respectful of other members at all times.</li>
-						<li>Do not post copyright-infringing material, “offensive” posts, links or images.</li>
-						</i>
-					</p>
+			<section id="banner" style="background-image: url('../images/search2.jpg'); background-size:cover;">
+					<h2>Search results for <em>"<?php echo $_GET['query']?>"</em></h2>
+					<p>These are your search results. If you are unable to find a similar question then feel free to post a question in the relevant category and our community will respond.</p>
 					<p>Search keywords related to your query:</p>
 					<ul class="actions special">
 						<form method="get" action="search.php" autocomplete="off">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-9 col-12-mobilep">
-									<input type="text" name="query" id="query" value="" placeholder="Query" style="color:black;"/>
+									<input type="text" name="query" id="query" value="" placeholder="Search" style="color:black;"/>
 								</div>
 								<div class="col-3 col-12-mobilep">
 									<input type="submit" value="Search" class="fit" />
@@ -64,54 +61,48 @@
       
     		</div>
   		</div> 
-			<!-- Main -->
-				<section id="main" class="container">
 
-					<section id="os-algorithms" class="container">
-						<div class="row">
-							<!-- FETCH ALL THE MODULES FROM DATABASE -->
-							<?php 
-							$sql = "SELECT * FROM `modules`";
-							$result = mysqli_query($conn, $sql);
-							while($row = mysqli_fetch_assoc($result)){
-								$id = $row['module_id'];
-								$mod = $row['module_name'];
-								$desc = $row['module_description'];
-								echo '<div class="col-6 col-12-narrower">
-										<section class="box special">
-											<span class="image featured"><img src="../images/dis' .$id. '.jpeg" alt="" /></span>
-											<h3>' . $mod . '</h3>
-											<p>' . $desc . '</p>
-											<ul class="actions special">
-											<li><a href="queslist.php?modid=' . $id . '" class="button alt">View Questions</a></li>
-											</ul>
-										</section>
-									</div>';
-									
-							}
-							?>
-						</div>
-					</section>
-				</section>
+          <div class="container my-3" id="maincontainer">
+              <br>
+        <!-- <h1 class="py-3">Search results for <em>"<?php echo $_GET['query']?>"</em></h1> -->
 
-			<!-- CTA -->
-				<!-- <section id="cta">
+		<?php
+        $noresults = true;
+		$query=$_GET["query"];
+    	$sql = "SELECT * FROM questions where match(ques_title,ques_desc) against ('$query');"; 
+    	$result = mysqli_query($conn, $sql);
+		
+    	while($row = mysqli_fetch_assoc($result)){
+        	$title = $row['ques_title'];
+        	$desc = $row['ques_desc'];
+			$ques_id = $row['ques_id'];
+			$url= "question.php?quesid=". $ques_id;
+            $noresults = false;
 
-					<h2>Sign up for beta access</h2>
-					<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+		 // Display the search result
+		 echo '<div class="result">
+		 <blockquote>
+		 <h1><a href="'. $url. '" class="text-dark">'. $title. '</a> </h1>
+		 <p>'. $desc .'</p>
+   </div></blockquote>'; 
+        }
 
-					<form>
-						<div class="row gtr-50 gtr-uniform">
-							<div class="col-8 col-12-mobilep">
-								<input type="email" name="email" id="email" placeholder="Email Address" />
-							</div>
-							<div class="col-4 col-12-mobilep">
-								<input type="submit" value="Sign Up" class="fit" />
-							</div>
-						</div>
-					</form>
+        if ($noresults){
+            echo '<div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <p class="display-4"><b>No Results Found</b></p>
+                        <p class="lead"> Suggestions: <ul>
+                                <li>Make sure that all words are spelled correctly.</li>
+                                <li>Try different keywords.</li>
+                                <li>Try more general keywords. </li></ul>
+                        </p>
+                    </div>
+                 </div>';
+        }        
+	?>
 
-				</section> -->
+            
+  </div>
 
 			<!-- Footer -->
 			
