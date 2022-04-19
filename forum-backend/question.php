@@ -24,6 +24,12 @@
     				background-color: #f9f9f9;
   				}
 		</style>
+
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
 	</head>
 
 	<body class="landing is-preload">
