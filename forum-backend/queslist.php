@@ -19,12 +19,6 @@
     				background-color: #f9f9f9;
   				}
   		</style>
-
-<script>
-    if ( window.history.replaceState ) {
-        window.history.replaceState( null, null, window.location.href );
-    }
-</script>
 		  <link rel="stylesheet" href="../assets/css/main1.css" />
 		  <link rel="stylesheet" href="../assets/css/main.css" />
 		  <link rel="stylesheet" href="../assets/css/design.css" />
