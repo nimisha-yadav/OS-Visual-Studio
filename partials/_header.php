@@ -30,7 +30,7 @@ echo '<header id="header" class="alt">
 					<li><a href="../contact.php">Contact</a></li>';
 
                     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
-                        echo '<li>Welcome '. $_SESSION['user_email']. '</li>';
+                        echo '<li style="color:white;">Welcome '. $_SESSION['user_email']. '</li>';
                         echo '<li><a href="/OS-Visual-Studio/partials/_logout.php" class="button">Logout</a></li>';
 					}
                     else{
