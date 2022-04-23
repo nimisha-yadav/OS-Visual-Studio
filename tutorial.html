@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>OS Visual Studio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/OS.ico" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/design.css" />
+		<link rel="stylesheet" href="assets/css/tutorial.css" />
+
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
+								<ul>
+									<li>
+										<a href="cpu-scheduling.html">CPU Scheduling</a>
+									</li>
+									<li>
+										<a href="disk-scheduling.html">Disk Scheduling</a>
+									</li>
+									<li>
+										<a href="page-replacement.html">Page Replacement</a>
+									</li>
+									<li>
+										<a href="deadlock-avoidance.html">Deadlock Avoidance</a>
+									</li>
+									<li>
+										<a href="memory-allocation.html">Memory Allocation</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="tutorial.html">Tutorial</a></li>
+							<li><a href="forum-backend/forum.php">Discussion Forum</a></li>
+							<li><a href="index.html#team">Our Team</a></li>
+							<li><a href="contact.php">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box">
+						<header class="major">
+							<h2>Tutorials and Resources for OS Algorithms</h2>
+							<p>Operating Systems has various algorithms which are used to schedule the processes on the processor in an efficient way and test all the requests made by processes for resources. In this section, we've compiled brief tutorials and resources for getting started with various algorithms in Operating Systems.</p>
+							<br><br><br><br>
+
+						</header>
+						<h3 align="center">CPU Scheduling Algorithms</h3>
+						<br>
+									<p><span class="image left"><img src="images/tutorial-pic01.png" alt="" /></span>CPU Scheduling is a process of determining which process will own CPU for execution while another process is on hold. The main task of CPU scheduling is to make sure that whenever the CPU remains idle, the OS at least select one of the processes available in the ready queue for execution. The selection process will be carried out by the CPU scheduler. It selects one of the processes in memory that are ready for execution.</p>
+							<div class="row">
+								<div class="row-6 row-12-mobilep">
+									<h4><b>Important Terminologies</b></h4>
+									<p><ol><li>Burst Time/Execution Time: It is a time required by the process to complete execution. It is also called running time. </li> <li>Arrival Time: when a process enters in a ready state </li><li>Finish Time: when process complete and exit from a system </li> <li>Multiprogramming: A number of programs which can be present in memory at the same time. </li> <li>Jobs: It is a type of program without any kind of user interaction. </li><li>User: It is a kind of program having user interaction. </li><li>Process: It is the reference that is used for both job and user. </li> <li>CPU/IO burst cycle: Characterizes process execution, which alternates between CPU and I/O activity. </li> <li>CPU times are usually shorter than the time of I/O.</li></ol></p>
+									<br>
+									<h4><b>Resources</b></h4>
+									<br>
+									<p>For theoretical concepts, check out these articles:<li><a href="https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/">CPU Scheduling in OS</a> - GeeksforGeeks</li><li><a href="https://www.go4expert.com/articles/types-of-scheduling-t22307/">Types Of Scheduling</a> - Go4Expert</li><li><a href="https://medium.com/geekculture/cpu-scheduling-algorithms-cd882e685eef">CPU Scheduling Algorithms</a> - Medium</li><li><a href="https://www.tutorialspoint.com/operating_system/os_process_scheduling_algorithms.htm">OS Scheduling Algorithms</a> - TutorialsPoint</li></p>
+									<p>For video resources, check out the following content:<li><a href="https://www.youtube.com/watch?v=zFnrUVqtiOY"> Process Scheduling Algorithms (Preemption Vs Non-Preemption)</a></li><li><a href="https://www.youtube.com/watch?v=MZdVAVMgNpA">First Come First Serve (FCFS)</a></li><li><a href="https://www.youtube.com/watch?v=VCIVXPoiLpU"> Shortest Job First (SJF)</a></li><li><a href="https://www.youtube.com/watch?v=TxjIlNYRZ5M">Round Robin (RR)</a></li></p>
+								</div>
+							</div>
+									<br>
+									<hr>
+									<br>
+									<h3 align="center">Disk Scheduling Algorithms</h3>
+									<br>
+									<p><span class="image right"><img src="images/tutorial-pic02.png" alt="" /></span>Disk scheduling is done by operating systems to schedule I/O requests arriving for the disk. Disk scheduling is also known as I/O scheduling. Disk scheduling is important since multiple I/O requests may arrive by different processes and only one I/O request can be served at a time by the disk controller. Thus other I/O requests need to wait in the waiting queue and need to be scheduled.</p>
+							<div class="row">
+								<div class="row-6 row-12-mobilep">
+									<h4><b>Important Terminologies</b></h4>
+									<p><ol><li>Seek Time: Seek time is the time taken in locating the disk arm to a specified track where the read/write request will be satisfied.</li>
+		                     <li>Rotational Latency: It is the time taken by the desired sector to rotate itself to the position from where it can access the R/W heads.</li>
+		                     <li>Transfer Time: It is the time taken to transfer the data. </li>
+		                     <li>Disk Access Time = Rotational Latency + Seek Time + Transfer Time </li>
+		                     <li>Disk Response Time: It is the average of time spent by each request waiting for the IO operation. </li></ol></p>
+									<br>
+									<h4><b>Resources</b></h4>
+									<br>
+									<p>For theoretical concepts, check out these articles:<li><a href="https://www.geeksforgeeks.org/disk-scheduling-algorithms/">Disk Scheduling Algorithms</a> - GeeksforGeeks</li><li><a href="http://www.cs.iit.edu/~cs561/cs450/disksched/disksched.html">Disk Scheduling</a> - Illinois CS</li><li><a href="https://webeduclick.com/disk-scheduling-algorithms-with-examples/">Examples of Disk Scheduling</a> - WebEdu</li></p>
+									<p>For video resources, check out <a href="https://www.youtube.com/watch?v=9uoa_p8q47Y">Disk Scheduling</a> by GateSmashers.</p>
+									</div>
+								</div>
+									<br>
+									<hr>
+									<br>
+									<h3 align="center">Page Replacement Algorithms</h3>
+									<br>
+									<p><span class="image left"><img src="images/tutorial-pic03.png" alt="" /></span>In an operating system that uses paging for memory management, a page replacement algorithm is needed to decide which page needs to be replaced when new page comes in. The process of replacement is sometimes called swap out or write to disk. Page replacement is done when the requested page is not found in the main memory (page fault). The various page replacement algorithms like FIFO, Optimal page replacement, LRU, LIFO, and Random page replacement help the operating system to decide which page to replace.</p>
+							<div class="row">
+								<div class="row-6 row-12-mobilep">
+									<h4><b>Important Terminologies</b></h4>
+									<p><ol><li>Page Fault: A page fault is an interruption that occurs when a software program attempts to access a memory block not currently stored in the system's RAM. The page fault is also called page miss. </li> <li>Page Hit: When we want to load the page on the memory, and the page is already available on memory, then it is called page hit. </li><li>Page Fault Rate: A page fault will occur for every certain amount of main memory access,which is called page fault rate. </li> <li>Page Hit Rate: The percentage of times that a particular page number is found in the TLB is called the Page hit ratio. </li></ol></p>
+									<br>
+									<h4><b>Resources</b></h4>
+									<br>
+									<p>For theoretical concepts, check out these articles:<li><a href="https://www.geeksforgeeks.org/page-replacement-algorithms-in-operating-systems/">Page Replacement Algorithms</a> - GeeksforGeeks</li><li><a href="https://www.scaler.com/topics/operating-system/page-replacement-algorithm/">Page Replacement in OS</a> - Scaler</li><li><a href="https://inst.eecs.berkeley.edu/~cs162/fa19/static/sections/section9-sol.pdf">Caches and Page Replacement</a> - EECS, UC Berkeley</li></p>
+									<p>For video resources, check out the following content:<li><a href="https://www.youtube.com/watch?v=8rcUs5RutX0"> Page Replacement Introduction | FIFO Algorithm</a></li><li><a href="https://www.youtube.com/watch?v=q2BpMvPhhrY">Optimal Page Replacement</a></li><li><a href="https://www.youtube.com/watch?v=dYIoWkCvd6A"> Least Recently Used Page Replacement Algorithm</a></li></p>
+								</div>
+							</div>
+									
+									<br>
+									<hr>
+									<br>
+									<h3 align="center">Deadlock Avoidance Algorithm</h3>
+									<br>
+									<p><span class="image right"><img src="images/tutorial-pic04.png" alt="" /></span>The deadlock avoidance method is used by the operating system in order to check whether the system is in a safe state or in an unsafe state and in order to avoid the deadlocks, the process must need to tell the operating system about the maximum number of resources a process can request in order to complete its execution. Banker's algorithm is used to avoid deadlock and allocate resources safely to each process in the computer system. It also helps the operating system to successfully share the resources between all the processes.</p>
+							<div class="row">
+								<div class="row-6 row-12-mobilep">
+									<h4><b>Important Terminologies</b></h4>
+									<p>Suppose n is the number of processes, and m is the number of each type of resource used in a computer system.<ol><li>Available: It is an array of length 'm' that defines each type of resource available in the system. When Available[j] = K, means that 'K' instances of Resources type R[j] are available in the system. </li> <li>Max: It is a [n x m] matrix that indicates each process P[i] can store the maximum number of resources R[j] (each type) in a system. </li> <li>Allocation: It is a matrix of m x n orders that indicates the type of resources currently allocated to each process in the system. When Allocation [i, j] = K, it means that process P[i] is currently allocated K instances of Resources type R[j] in the system. </li> <li>Need: It is an M x N matrix sequence representing the number of remaining resources for each process. When the Need[i] [j] = k, then process P[i] may require K more instances of resources type Rj to complete the assigned work. </li><li>Finish: It is the vector of the order m. It includes a Boolean value (true/false) indicating whether the process has been allocated to the requested resources, and all resources have been released after finishing its task. </li> <li>Execution Time: It is a time required by the process to complete execution. It is also called running time.</li></ol></p>
+									<br>
+									<h4><b>Resources</b></h4>
+									<br>
+									<p>For theoretical concepts, check out these articles:<li><a href="https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/">Banker’s Algorithm in Operating System</a> - GeeksforGeeks</li><li><a href="https://www.scaler.com/topics/operating-system/deadlock-avoidance-in-os/">Deadlock Avoidance in OS</a> - Scaler</li><li><a href="https://en.wikipedia.org/wiki/Banker%27s_algorithm">Banker's Algorithm</a> - Wikipedia</li></p>
+									<p>For video resources, check out <a href="https://www.youtube.com/watch?v=7gMLNiEz3nw">Deadlock Avoidance Banker's Algorithm</a> by GateSmashers.</p>
+								</div>
+							</div>
+									<br>
+									<hr>
+									<br>
+									<h3 align="center">Memory Allocation Techniques</h3>
+									<br>
+									<p><span class="image left"><img src="images/tutorial-pic05.png" alt="" /></span>Memory allocation is the process of assigning blocks of memory on request. Typically the allocator receives memory from the operating system in a small number of large blocks that it must divide up to satisfy the requests for smaller blocks. It must also make any returned blocks available for reuse. There are many common ways to perform this, with different strengths and weaknesses. A few of them are: First Fit, Worst Fit, Best Fit. These techniques can often be used in combination.</p>
+							<div class="row">
+								<div class="row-6 row-12-mobilep">
+									<h4><b>Important Terminologies</b></h4>
+									<p><ol><li>Static Memory Allocation: The program is allocated memory at compile time. </li> <li>Dynamic Memory Allocation: The programs are allocated with memory at run time. </li><li>Best Fit: Deals with allocating the smallest free partition which meets the requirement of the requesting process. </li> <li>First Fit: The pointer keeps track of all the free blocks in the memory and accepts the request of allocating a memory block to the coming process. </li> <li>Worst Fit: Allocates a process to the partition which is largest sufficient among the freely available partitions available in the main memory. </li></ol></p>
+									<br>
+									<h4><b>Resources</b></h4>
+									<br>
+									<p>For theoretical concepts, check out these articles:<li><a href="https://www.geeksforgeeks.org/partition-allocation-methods-in-memory-management/">Allocation Methods in Memory Management</a> - GeeksforGeeks</li><li><a href="https://www.memorymanagement.org/mmref/begin.html">Memory Management</a> - Memory Management Org</li><li><a href="http://www.facweb.iitkgp.ac.in/~isg/OS/SLIDES/ch8-Memory_Management.pdf">Main Memory & its Management</a> - IITKGP</li></p>
+									<p>For video resources, check out <a href="https://www.youtube.com/watch?v=N3rG_1CEQkQ">Memory Allocation Techniques</a> by GateSmashers.</p>
+								</div>
+							</div>
+									<br>
+					</section>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/nimisha-yadav/OS-Visual-Studio" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:osvisstudio@gmail.com" class="icon brands fa-google"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; <a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS Visual Studio. </a>   All Rights Reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

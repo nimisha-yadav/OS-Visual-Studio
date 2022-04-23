@@ -41,7 +41,7 @@
 					<h2>OS Visual Studio | Discussion Forum</h2>
 					<p>A dedicated forum to ask and answer queries related to Operating Systems and its algorithms.</p>
 					<p style="font-size:1.3rem;"><i>
-						<li>No Spam / Advertising / Self-promotion allowed in the forum. Remain respectful of other members at all times.</li>
+						<li>No Spam / Advertising / Self-promotion is allowed in the forum. Please be respectful towards other users in your discussions.</li>
 						<li>Do not post copyright-infringing material, “offensive” posts, links or images.</li>
 						</i>
 					</p>
