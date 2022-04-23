@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="simulator/cpu-scheduling/cpu-scheduling-layout.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+		<script src="pdf.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -65,12 +66,14 @@
 								<p><li>Burst Time/Execution Time: It is a time required by the process to complete execution. It is also called running time. </li> <li>Arrival Time: when a process enters in a ready state </li><li>Finish Time: when process complete and exit from a system </li> <li>Multiprogramming: A number of programs which can be present in memory at the same time. </li> <li>Jobs: It is a type of program without any kind of user interaction. </li><li>User: It is a kind of program having user interaction. </li><li>Process: It is the reference that is used for both job and user. </li> <li>CPU/IO burst cycle: Characterizes process execution, which alternates between CPU and I/O activity. </li> <li>CPU times are usually shorter than the time of I/O.</li></p>
 							</div>
 							<div class="row-6 row-12-mobilep">
+		
 								<h3>Demo of CPU Scheduling Algorithms</h3>
 								<p>In this section, we shall visualise the working of CPU Scheduling Algorithms through Gantt Chart, Process Table, and Comparison Graphs. Note: Process ID is the tiebreaker.</p>
 
 								<!-- Algorithm-->
 
-							    	<div class="algoblock">
+							    	<div class="algoblock" id="invoice">
+							
 							        <form id="algorithms-form">
 							            <label for="algo"><h1>Algorithms : </h1></label>
 							            <select name="algo" id="algo">
@@ -110,11 +113,11 @@
 							                    <td class="process-time cpu process-input"><input type="number" min="1" step="1" value="1"> </td>
 							                </tr>
 							            </tbody>
-							        </table>
+							        </table>	
 							        <div class="cl">
 
-							        <button type="button" class="add-btn buttonclass button alt small" style="float: left;">+ Add Process</button>
-							        <button type="button" class="remove-btn buttonclass button alt small" style="float: right;">- Delete Process</button>
+							        <button type="button" class="add-btn buttonclass button alt small" style="float: left;" data-html2canvas-ignore="true">+ Add Process</button>
+							        <button type="button" class="remove-btn buttonclass button alt small" style="float: right;" data-html2canvas-ignore="true">- Delete Process</button>
 							        <br>
 							        <br>
 							    	</div>
@@ -124,12 +127,15 @@
 							            <input type="number" name="Time Quantum" id="tq" min="1" step="1" value="1">
 							        </div>
 							        <br>
-							       
+									<div class="html2pdf__page-break"></div>
 							    	<ul class="actions special">
-									<li><button type="button" class="button icon solid fa-calculator" id="calculate">Calculate</button></li>
-									<li><button type="button" class="button icon solid fa-download" id="calculate">Download Results</button></li>
-									<li><button type="button" id="reset" class="button icon solid fa-undo" onClick="window.location.reload();">Reset</button></li>
+									<li><button type="button" class="button icon solid fa-calculator" id="calculate"  data-html2canvas-ignore="true">Calculate</button></li>
+									<li><button type="button" class="button icon solid fa-download" id="download"  data-html2canvas-ignore="true">Download Results</button></li>
+									<li><button type="button" id="reset" class="button icon solid fa-undo" onClick="window.location.reload();"  data-html2canvas-ignore="true">Reset</button></li>
 									</ul>
+									
+									
+
 									<div class="otbottom">
 							        <div id="output"></div>
 							        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>

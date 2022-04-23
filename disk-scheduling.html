@@ -9,6 +9,9 @@
 		<link rel="stylesheet" href="simulator/disk-scheduling/disk-scheduling-layout.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+    <script src="pdf.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -73,7 +76,7 @@
                      <li>Disk Response Time: It is the average of time spent by each request waiting for the IO operation. </li>
                      </p>
                 </div>
-                <div class="row-6 row-12-mobilep">
+                <div class="row-6 row-12-mobilep" id="invoice">
                   <h3>Demo of Disk Scheduling Algorithms</h3>
                   <p>In this section, we shall visualise the working of Disk Scheduling Algorithms through analysing the algorithm chart and the comparison chart.</p>
                     <div class="left transform">
@@ -125,10 +128,11 @@
                             </div>
                         </fieldset>
                       </form>
+                      <div class="html2pdf__page-break"></div>
 			    <ul class="actions special">
-				    <li><button type="submit" id="plot-button" class="button icon solid fa-calculator" onclick="getBitStreamAndPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('algorithm').value,document.getElementById('direction').value)">&nbsp;Calculate&nbsp;</button></li>
-				    <li><button type="submit" id="animate-button" class="button icon solid fa-download"> Download Results</button></li>
-				    <li><button type="button" id="reset" class="button icon solid fa-undo" onClick="window.location.reload();">Reset</button></li>
+				    <li><button type="submit" id="plot-button" class="button icon solid fa-calculator" data-html2canvas-ignore="true" onclick="getBitStreamAndPlot(event, document.getElementById('bitstream-input').value, document.getElementById('initial-input').value, document.getElementById('final-input').value, document.getElementById('algorithm').value,document.getElementById('direction').value)">&nbsp;Calculate&nbsp;</button></li>
+				    <li><button type="submit" id="download" class="button icon solid fa-download"  data-html2canvas-ignore="true"> Download Results</button></li>
+				    <li><button type="button" id="reset" class="button icon solid fa-undo" onClick="window.location.reload();"  data-html2canvas-ignore="true">Reset</button></li>
 			    </ul>
 
                     </div>

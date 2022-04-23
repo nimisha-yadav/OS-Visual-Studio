@@ -315,7 +315,6 @@ function showGanttChart(output, outputDiv) {
     });
     let ganttChart = document.createElement("div");
     ganttChart.id = "gantt-chart";
-
     google.charts.load("current", { packages: ["timeline"] });
     google.charts.setOnLoadCallback(drawGanttChart);
 

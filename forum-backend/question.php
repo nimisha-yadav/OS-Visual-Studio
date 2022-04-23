@@ -127,7 +127,7 @@
 						}
 				?>
 
-                <section class="container" id="os-algorithms">
+                <div class="container" id="os-algorithms">
 	                <div class="firstDiv">
 		               	<h1><b> View Discussions</b></h1>
                       	
@@ -176,7 +176,7 @@
 					  	 ?> 
                       
 	               	</div>
-				</section> 
+						</div> 
 					   
 
 						

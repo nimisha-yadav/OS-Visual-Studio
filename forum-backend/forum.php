@@ -37,7 +37,7 @@
 			<!-- Header -->
 			
 			<!-- Banner -->
-				<section id="banner" style="background-image: url('../images/pic04.jpg'); background-size:cover;">
+				<section id="banner" style="background-image: url('../images/searchh.jpeg'); background-size:cover;">
 					<h2>OS Visual Studio | Discussion Forum</h2>
 					<p>A dedicated forum to ask and answer queries related to Operating Systems and its algorithms.</p>
 					<p style="font-size:1.3rem;"><i>
@@ -50,7 +50,7 @@
 						<form method="get" action="search.php" autocomplete="off">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-9 col-12-mobilep">
-									<input type="text" name="query" id="query" value="" placeholder="Query" style="color:black;"/>
+									<input type="text" name="query" id="query" value="" placeholder="Query" style="color:black;" required/>
 								</div>
 								<div class="col-3 col-12-mobilep">
 									<input type="submit" value="Search" class="fit" />

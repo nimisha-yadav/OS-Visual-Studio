@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="../images/OS.ico" />
 		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css" />
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 		<style>
@@ -47,7 +47,7 @@
 						<form method="get" action="search.php" autocomplete="off">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-9 col-12-mobilep">
-									<input type="text" name="query" id="query" value="" placeholder="Search" style="color:black;"/>
+									<input type="text" name="query" id="query" value="" placeholder="Search" style="color:black;" required/>
 								</div>
 								<div class="col-3 col-12-mobilep">
 									<input type="submit" value="Search" class="fit" />
