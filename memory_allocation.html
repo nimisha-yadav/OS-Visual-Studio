@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="MemoryCss.css" />
+		<link rel="stylesheet" href="simulator/memory-allocation/memory-allocation-layout.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
   <body class="is-preload">
@@ -60,7 +60,7 @@
 								 and each partition contains exactly one process.</p>
               <div class="row">
                 <div class="row-6 row-12-mobilep">
-										<h3>Important Terminologies</h3>
+		<h3>Important Terminologies</h3>
                   <p>
                      <li>Memory: It is collection of data in a specific format. It is used to store instructions and processed data.</li>
                      <li>Fragmentation: A Fragmentation is defined as when the process is loaded and removed after execution from memory, it creates a small free hole.</li>
@@ -72,60 +72,49 @@
                   <h3>Demo of Memory Allocation Techniques</h3>
                   <p>In this section, we shall visualise the working of Memory Allocation Techniques through analysing the block of memory.</p>
                   <div class="row1">
-
-
-										<div class="col1">
-												<div class="col_part1">
-														<h2 class="col-header" id="typeHeader"></h2>
-														<!-- <h3>Choose the type that 'fits' you ;)</h3> -->
-														<span>Algorithm :</span>
-														<!-- <br> -->
-														<select id="type" onclick="handleTypeSelect()">
-																<option value="firstFit" selected>First Fit</option>
-																<option value="bestFit">Best Fit</option>
-																<option value="worstFit">Worst Fit</option>
-														</select>
-
-												</div>
-
-
-                      <div class="col1">
-                          <div class="col_part1">
-                              <h2 class="col-header" id="holesHeader"></h2>
-															<label>Add a Hole :</label>
-															<!-- <br> -->
-                              <div id="holesInput">
-                              </div>
-
-                              <button class="button buttonclass"onclick="addAHole()">Add hole</button>
-                          </div>
-                          <div class="col_part2">
-                              <h2 class="col-header" id="processesHeader"></h2>
-															<label>Add a Process :</label>
-															<!-- <br> -->
-                              <div id="processesInput">
-                              </div>
-                               <!-- <br> -->
-                              <button class="button buttonprocess" onclick="addAProcess()">Add Process</button>
-                          </div>
-                      </div>
-
-											<div id="init" style="padding-top: 20px;">
-												<ul class="actions special">
-													<li>
-														 <button class="button  icon solid fa-calculator" id="impressButton" onclick="impress()">Calculate</button>
-													</li>
-												</ul>
-
- 										 </div>
-													<hr>
-													<div class="col_part2">
-
-															<div id="test"><h3 id="test_init">You will be able to allocate/deallocate processes here.<br>The memory will appear here!</h3></div>
-															<br>
-
-													</div>
-											</div>
+			  <div class="col1">
+				  <div class="col_part1">
+					  <h2 class="col-header" id="typeHeader"></h2>
+					  <span>Algorithm :</span>
+					  <!-- <br> -->
+					  <select id="type" onclick="handleTypeSelect()">
+						  <option value="firstFit" selected>First Fit</option>
+						  <option value="bestFit">Best Fit</option>
+			            		  <option value="worstFit">Worst Fit</option>
+					  </select>
+				  </div>
+				  <div class="col1">
+					  <div class="col_part1">
+						  <h2 class="col-header" id="holesHeader"></h2>
+						  <label>Add a Hole :</label>
+						  <!-- <br> -->
+						  <div id="holesInput">
+						  </div>
+						  <button class="button buttonclass"onclick="addAHole()">Add hole</button>
+					  </div>
+					  <div class="col_part2">
+						  <h2 class="col-header" id="processesHeader"></h2>
+						  <label>Add a Process :</label>
+						  <!-- <br> -->
+						  <div id="processesInput">
+						  </div>
+						  <!-- <br> -->
+						  <button class="button buttonprocess" onclick="addAProcess()">Add Process</button>
+					  </div>
+				  </div>
+				  <div id="init" style="padding-top: 20px;">
+					  <ul class="actions special">
+						  <li>
+							  <button class="button  icon solid fa-calculator" id="impressButton" onclick="impress()">Calculate</button>
+						  </li>
+					  </ul>
+				  </div>
+				  <hr>
+				<div class="col_part2">
+					<div id="test"><h3 id="test_init">You will be able to allocate/deallocate processes here.<br>The memory will appear here!</h3></div>
+				        <br>
+				</div>
+			  </div>
                       <div class="col1 output_div">
                           <div id="answer"><h3 id="answer_init"></h3></div>
                           <div id="errorsArea">
@@ -134,49 +123,48 @@
                           </div>
                       </div>
                   </div>
-                  <script src="classes.js"></script>
-                  <script src="includes/definitions.js"></script>
-                  <script src="includes/routine.js"></script>
-                  <script src="includes/handlers.js"></script>
-                  <script src="includes/absorbInfoFromInputs.js"></script>
-                  <script src="includes/constructMemory.js"></script>
-                  <script src="includes/mixConsecutiveHoles.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/classes.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/definitions.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/routine.js "></script>
+                  <script src="simulator/memory-allocation/functions-js/handlers.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/absorbInfoFromInputs.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/constructMemory.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/mixConsecutiveHoles.js"></script>
 
-                  <script src="includes/types/allocateFF.js"></script>
-                  <script src="includes/types/allocateBF.js"></script>
-                  <script src="includes/types/allocateWF.js"></script>
-                  <script src="includes/types/deallocate.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/algorithm-implementation-js/allocateFF.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/algorithm-implementation-js/allocateBF.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/algorithm-implementation-js/allocateWF.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/algorithm-implementation-js/deallocate.js "></script>
 
 
-                  <script src="includes/draw.js"></script>
-                  <script src="includes/execute.js"></script>
-                  <script src="includes/addFunctionalButtons.js"></script>
-                  <script src="script.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/draw.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/execute.js"></script>
+                  <script src="simulator/memory-allocation/functions-js/addFunctionalButtons.js"></script>
+                  <script src="simulator/memory-allocation/memory-allocation-script.js"></script>
                 </div>
                 </div>
                 </div>
                 </section>
             <!-- Footer -->
-						<footer id="footer">
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; <a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS Visual Studio. </a>   All Rights Reserved.</li>
-							</ul>
-						</footer>
-
-              </div>
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; <a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS Visual Studio. </a>   All Rights Reserved.</li>
+				</ul>
+			</footer>
+	  </div>
 
               <!-- Scripts -->
-              <script src="assets/js/jquery.min.js"></script>
-              <script src="assets/js/jquery.dropotron.min.js"></script>
-              <script src="assets/js/jquery.scrollex.min.js"></script>
-              <script src="assets/js/browser.min.js"></script>
-              <script src="assets/js/breakpoints.min.js"></script>
-              <script src="assets/js/util.js"></script>
-              <script src="assets/js/main.js"></script>
+              <script src="simulator/memory-allocation/assests-js/jquery.min.js"></script>
+              <script src="simulator/memory-allocation/assests-js/jquery.dropotron.min.js"></script>
+              <script src="simulator/memory-allocation/assests-js/jquery.scrollex.min.js"></script>
+              <script src="simulator/memory-allocation/assests-js/browser.min.js"></script>
+              <script src="simulator/memory-allocation/assests-js/breakpoints.min.js"></script>
+              <script src="simulator/memory-allocation/assests-js/util.js"></script>
+              <script src="simulator/memory-allocation/assests-js/main.js"></script>
 
               </body>
       </html>
