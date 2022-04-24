@@ -3,17 +3,7 @@ function constructMemory(){
     memory=[];
     currentMemoryPosition=0;
   console.log(holesNumber);
-  // console.log(holesArray[1]);
-  //   lastMemoryPosition=holesArray[0].endingAt;
-  //   for(let ii=0;ii<=holesNumber;ii++){
-  //     if(holesArray[ii].endingAt > lastMemoryPosition)
-  //   {
-  //      lastMemoryPosition=holesArray[ii].endingAt;
-  //      console.log(lastMemoryPosition);
-  //   }
-  //   }
     lastMemoryPosition=holesArray[holesNumber-1].endingAt;
-    // lastMemoryPosition=Math.max(...holesArray).endingAt;
 
     let i=0; //i is the memory blocks counter
     let j=0; //j is the holes counter
