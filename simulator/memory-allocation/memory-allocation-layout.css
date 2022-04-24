@@ -1,0 +1,68 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+h1 {
+    font-size: 26px;
+    font-weight: 400;
+}
+h2{
+  font-weight: 400;
+}
+h3{
+  font-weight:400;
+}
+p{
+    margin: 0 0 0.8em 0;
+    /* font-weight: bold; */
+}
+#allocationErrorArea{
+  font-weight: bold;
+}
+
+.button{
+  font: inherit;
+  text-align: center;
+  background-color: #666;
+}
+.buttonclass{
+  height: 2.3em;
+  padding: 0 0;
+  width:100px;
+
+}
+.buttonprocess{
+  height: 2.3em;
+  padding: 0 0;
+  width:120px;
+}
+#allocateAllButton, #deallocateAllButton{
+  margin: 10px 5px;
+    width: 35%;
+    font-weight: bold;
+    font-style: inherit;
+    height: 50px;
+}
+.allocationButton,.deallocationButton{
+  margin: 5px 5px;
+}
+.startingAtLabel,.endingAtLabel{
+    font-size: initial;
+    font-weight: bold;
+}
+.output_div{
+margin:auto;
+width: 20%;
+}
+#blockType{
+  text-align: center;
+  color: white;
+  font-size: initial;
+  font-weight: bold;
+}
+#test{
+  text-align: center;
+}
