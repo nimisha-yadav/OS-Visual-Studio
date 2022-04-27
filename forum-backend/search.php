@@ -39,7 +39,7 @@
 			<!-- Header -->
 			
 			<!-- Banner -->
-			<section id="banner" style="background-image: url('../images/search2.jpg'); background-size:cover;">
+			<section id="banner" style="background-image: url('../images/banner4.png'); background-size:cover;">
 					<h2>Search results for <em>"<?php echo $_GET['query']?>"</em></h2>
 					<p>These are your search results. If you are unable to find a similar question then feel free to post a question in the relevant category and our community will respond.</p>
 					<p>Search keywords related to your query:</p>
