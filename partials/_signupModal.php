@@ -10,7 +10,7 @@
           <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
-          <form role="form" action=" /partials/_handleSignup.php" method="post">
+          <form role="form" action=" _handleSignup.php" method="post">
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> User Email</label>
               <input type="text" class="form-control" id="signupEmail" name="signupEmail" placeholder="Enter email" required>
