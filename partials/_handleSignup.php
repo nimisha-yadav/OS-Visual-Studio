@@ -25,7 +25,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             if($result){
                 $showAlert = true;
                 echo 'Signup success true';
-                header("Location: forum-backend/forum.php?signupsuccess=true");
+                header("Location: /OS-Visual-Studio/forum-backend/forum.php?signupsuccess=true");
                 exit();
             }
 
@@ -36,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         }
     }
 
-    header("Location: forum-backend/forum.php?signupsuccess=false&error=$showError");
+    header("Location: /OS-Visual-Studio/forum-backend/forum.php?signupsuccess=false&error=$showError");
 }
 
 ?>

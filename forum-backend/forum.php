@@ -37,7 +37,7 @@
 			<!-- Header -->
 			
 			<!-- Banner -->
-				<section id="banner" style="background-image: url('../images/searchh.jpeg'); background-size:cover;">
+				<section id="banner" style="background-image: url('../images/banner5.png'); background-size:cover;">
 					<h2>OS Visual Studio | Discussion Forum</h2>
 					<p>A dedicated forum to ask and answer queries related to Operating Systems and its algorithms.</p>
 					<p style="font-size:1.3rem;"><i>

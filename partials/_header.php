@@ -31,7 +31,7 @@ echo '<header id="header" class="alt">
 
                     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
                         echo '<li style="color:white;">Welcome '. $_SESSION['user_email']. '</li>';
-                        echo '<li><a href="../partials/_logout.php" class="button">Logout</a></li>';
+                        echo '<li><a href="/OS-Visual-Studio/partials/_logout.php" class="button">Logout</a></li>';
 					}
                     else{
                         echo '<li><button class="button alt small" data-toggle="modal" data-target="#loginModal">Login</button></li>
