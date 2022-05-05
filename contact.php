@@ -1,48 +1,47 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>OS Visual Studio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" href="images/OS.ico" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/design.css" />
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
-			<header id="header">
-          <h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
-          <nav id="nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li>
-                <a href="index.html#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
+  	<head>
+  		<title>OS Visual Studio</title>
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  		<link rel="icon" href="images/OS.ico" />
+  		<link rel="stylesheet" href="assets/css/main.css" />
+  		<link rel="stylesheet" href="assets/css/design.css" />
+  	</head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+			       <header id="header">
+              <h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
+              <nav id="nav">
                 <ul>
+                  <li><a href="index.html">Home</a></li>
                   <li>
-                    <a href="cpu-scheduling.html">CPU Scheduling</a>
+                    <a href="#os-algorithms" class="icon solid fa-angle-down">OS Algorithms</a>
+                    <ul>
+                      <li>
+                        <a href="cpu-scheduling.html">CPU Scheduling</a>
+                      </li>
+                      <li>
+                        <a href="disk-scheduling.html">Disk Scheduling</a>
+                      </li>
+                      <li>
+                        <a href="page-replacement.html">Page Replacement</a>
+                      </li>
+                      <li>
+                        <a href="deadlock-avoidance.html">Deadlock Avoidance</a>
+                      </li>
+                      <li>
+                        <a href="memory-allocation.html">Memory Allocation</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a href="disk-scheduling.html">Disk Scheduling</a>
-                  </li>
-                  <li>
-                    <a href="page-replacement.html">Page Replacement</a>
-                  </li>
-                  <li>
-                    <a href="deadlock-avoidance.html">Deadlock Avoidance</a>
-                  </li>
-                  <li>
-                    <a href="memory-allocation.html">Memory Allocation</a>
-                  </li>
+                  <li><a href="tutorial.html">Tutorial</a></li>
+                  <li><a href="forum-backend/forum.php">Discussion Forum</a></li>
+                  <li><a href="index.html#team">Our Team</a></li>
+                  <li><a href="contact.php">Contact</a></li>
                 </ul>
-              </li>
-              <li><a href="tutorial.html">Tutorial</a></li>
-              <li><a href="forum-backend/forum.php">Discussion Forum</a></li>
-              <li><a href="index.html#team">About Team</a></li>
-              <li><a href="contact.php">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-
+              </nav>
+            </header>
 
 	<center>
   <section id="main" class="container medium">
@@ -119,6 +118,14 @@
             return true;
         }
     </script>
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
 
 </body>
 </html>

@@ -37,8 +37,8 @@
 			<!-- Header -->
 			
 			<!-- Banner -->
-				<section id="banner" style="background-image: url('../images/banner5.png'); background-size:cover;">
-					<h2>OS Visual Studio | Discussion Forum</h2>
+				<section id="banner" style="background-image: url('../images/banner6.png'); background-size:cover;">
+					<h2>DISCUSSION FORUM</h2>
 					<p>A dedicated forum to ask and answer queries related to Operating Systems and its algorithms.</p>
 					<p style="font-size:1.3rem;"><i>
 						<li>No Spam / Advertising / Self-promotion is allowed in the forum. Please be respectful towards other users in your discussions.</li>
@@ -49,12 +49,8 @@
 					<ul class="actions special">
 						<form method="get" action="search.php" autocomplete="off">
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-9 col-12-mobilep">
-									<input type="text" name="query" id="query" value="" placeholder="Query" style="color:black;" required/>
-								</div>
-								<div class="col-3 col-12-mobilep">
-									<input type="submit" value="Search" class="fit" />
-								</div>
+									<li><input type="text" name="query" id="query" value="" placeholder="Query" style="color:black;" required/></li>
+									<li><input type="submit" value="Search" class="fit" /></li>
 							</div>
 						</form>
 					</ul>
@@ -65,6 +61,7 @@
     		</div>
   		</div> 
 			<!-- Main -->
+			<br><br><br><br><br><br><br><br>
 				<section id="main" class="container">
 
 					<section id="os-algorithms" class="container">
@@ -79,7 +76,7 @@
 								$desc = $row['module_description'];
 								echo '<div class="col-6 col-12-narrower">
 										<section class="box special">
-											<span class="image featured"><img src="../images/dis' .$id. '.jpeg" alt="" /></span>
+											<span class="image featured"><img src="../images/dis' .$id. '.jpg" alt="" /></span>
 											<h3>' . $mod . '</h3>
 											<p>' . $desc . '</p>
 											<ul class="actions special">
@@ -133,6 +130,19 @@
   			});
 			});
 		</script>
+		<script>
+function checkEmail() {
+
+var email = document.getElementById('signupEmail');
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+if (!filter.test(email.value)) {
+alert('Please provide a valid email address.');
+return false;
+}
+}
+
+</script>
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.dropotron.min.js"></script>

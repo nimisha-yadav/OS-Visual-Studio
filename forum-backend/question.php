@@ -58,7 +58,7 @@
 			<!-- Header -->
 
 			<!-- Banner -->
-            <section id="main" style="background-color:#ecc49c;">
+            <section id="main" style="background-color:#e89980;">
             	<section class="box special" style="margin-top:25%;">
 					<header class="major">
 						<h1 style="text-align:left;"><b>Posted By : <?php echo $user_email;?></b></h1>
@@ -87,7 +87,7 @@
 						{
 							echo '<script>window.alert("Your comment has been added! Thanks for helping the community.")</script>';
 							echo ' <div class="alert alert-success alert-dismissible fade show shadow">
-                        		<strong>Success!</strong> Your thread has been added! Please wait for community to respond
+                        		<strong>Success!</strong> Your thread has been added! Please wait for community to respond.
                         		<button type="button" class="btn-close" data-bs-dismiss="alert">
                         		</button>
                   				</div>';

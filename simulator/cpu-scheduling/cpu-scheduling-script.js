@@ -330,7 +330,7 @@ function showGanttChart(output, outputDiv) {
         dataTable.addColumn({ type: "date", id: "End" });
         dataTable.addRows(ganttChartData);
         let ganttWidth = '100%';
-        let availablewid = '60%';
+        let availablewid = '90%';
         if (startGantt >= 20) {
             ganttWidth = 0.05 * startGantt * availablewid;
         }

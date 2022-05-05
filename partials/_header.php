@@ -1,7 +1,7 @@
 <?php
 session_start();
 echo '<header id="header" class="alt">
-			<h1><a href="/OS-Visual-Studio/index.html">OS</a> Visual Studio</h1>
+			<h1><a href="https://github.com/nimisha-yadav/OS-Visual-Studio">OS</a> Visual Studio</h1>
 			<nav id="nav">
 				<ul>	
 					<li><a href="../index.html">Home</a></li>
@@ -21,7 +21,7 @@ echo '<header id="header" class="alt">
 								<a href="../deadlock-avoidance.html">Deadlock Avoidance</a>
 							</li>
 							<li>
-								<a href="#">Memory Allocation</a>
+								<a href="../memory-allocation.html">Memory Allocation</a>
 							</li>
 						</ul>
 					</li>

@@ -7,7 +7,16 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $password = $_POST['signupPassword'];
     $cpassword = $_POST['signupcPassword'];
     
+// Validate password strength
+$uppercase = preg_match('@[A-Z]@', $password);
+$lowercase = preg_match('@[a-z]@', $password);
+$number    = preg_match('@[0-9]@', $password);
+$specialChars = preg_match('@[^\w]@', $password);
 
+if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 8) {
+    $showError = 'Password should be at least 8 characters in length and should include at least one upper case letter, one number, and one special character.';
+}
+    else{
     //CHECK WHETHER THIS EMAIL EXISTS
     $existsql = "SELECT * FROM `users` WHERE user_email = '$user_email'";
     $result = mysqli_query($conn, $existsql);
@@ -35,7 +44,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             
         }
     }
-
+}
     header("Location: /OS-Visual-Studio/forum-backend/forum.php?signupsuccess=false&error=$showError");
 }
 

@@ -41,17 +41,13 @@
 			<!-- Banner -->
 			<section id="banner" style="background-image: url('../images/banner4.png'); background-size:cover;">
 					<h2>Search results for <em>"<?php echo $_GET['query']?>"</em></h2>
-					<p>These are your search results. If you are unable to find a similar question then feel free to post a question in the relevant category and our community will respond.</p>
+					<p>These are your search results. If you are unable to find a similar question then feel free to post a question in the relevant category.</p>
 					<p>Search keywords related to your query:</p>
 					<ul class="actions special">
 						<form method="get" action="search.php" autocomplete="off">
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-9 col-12-mobilep">
-									<input type="text" name="query" id="query" value="" placeholder="Search" style="color:black;" required/>
-								</div>
-								<div class="col-3 col-12-mobilep">
-									<input type="submit" value="Search" class="fit" />
-								</div>
+									<li><input type="text" name="query" id="query" value="" placeholder="Search" style="color:black;" required/></li>
+									<li><input type="submit" value="Search" class="fit" /></li>
 							</div>
 						</form>
 					</ul>
